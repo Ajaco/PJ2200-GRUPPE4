@@ -1,0 +1,1 @@
+Dette er vår readme. Denne bør vel kunne brukes?
