@@ -1,0 +1,1 @@
+This is our webproject folder. All files that goes here, are intended to be uploaded to a webserver.
