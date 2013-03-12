@@ -1,0 +1,98 @@
+package personObjects;
+
+public class Person {
+	
+	
+	//Attributter
+	private int id;             //Usikker på om det er nødvendig å ha med ID her for at databasen skal ta imot objektet.
+	private String name;
+	private String dateOfBirth;
+	private char sex;
+	private String phoneNbr;
+	private String email;
+	private String occupation;
+	//--
+	
+	
+	//Konstruktører
+	public Person() {
+		this(0, "Ola Nordmann", "1900.01.01", 'm', "00000000", "olanordmann@undefined.com", "3D Artist");
+	} 
+
+	public Person(int id, String name, String dateOfBirth, char sex, String phoneNbr, String email, String occupation) {
+		
+		setID(id);
+		setName(name);
+		setDateOfBirth(dateOfBirth);
+		setSex(sex);
+		setPhoneNbr(phoneNbr);
+		setEmail(email);
+		setOccupation(occupation);	
+	}
+		
+	
+		//set-metoder:
+		public void setID(int id) {
+			this.id = id; 
+		}
+		
+		public void setName(String name) {
+			this.name = name; 
+		}
+		
+		public void setDateOfBirth(String dateOfBirth) {
+			this.dateOfBirth = dateOfBirth; 
+		}
+		
+		public void setSex(char sex) {
+			this.sex = sex; 
+		}
+		
+		public void setPhoneNbr(String phoneNbr) {
+			this.phoneNbr = phoneNbr;
+		}
+		
+		public void setEmail(String email) {
+			this.email = email;
+		}
+		
+		public void setOccupation(String occupation) {
+			this.occupation = occupation; 
+		}
+		//--
+		
+		
+		//get-metoder:
+		public int getID(int id) {
+			return id;
+		} 
+		
+		public String getName(String name) {
+			return name;
+		} 
+		
+		public String getDateOfBirth(String dateOfBirth) {
+			return dateOfBirth;
+		} 
+		
+		public char getSex(char sex) {
+			return sex;
+		} 
+		
+		public String getPhoneNbr(String phoneNbr) {
+			return phoneNbr;
+		} 
+		
+		public String getEmail(String email) {
+			return email;
+		} 
+		
+		public String getOccupation(String occupation) {
+			return occupation;
+		} 
+		//--
+	
+		public String toString() {
+			return "ID: " + id + " Name: " + name + " Date of birth: " + dateOfBirth + " Sex: " + sex + " Phone: " + phoneNbr + " Email: " + email + " Field of expertise: " + occupation;
+		}
+}
