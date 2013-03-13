@@ -20,20 +20,20 @@
   
   
   <servlet>
-      <servlet-name>BookSearchServlet</servlet-name>
-      <servlet-class>no.nith.BookSearchServlet</servlet-class>
+      <servlet-name>UserSearchServlet</servlet-name>
+      <servlet-class>no.nith.UserSearchServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-      <servlet-name>BookSearchServlet</servlet-name>
+      <servlet-name>UserSearchServlet</servlet-name>
       <url-pattern>/search</url-pattern>
   </servlet-mapping>
   
   <servlet>
-      <servlet-name>InsertBookServlet</servlet-name>
-      <servlet-class>no.nith.InsertBookServlet</servlet-class>
+      <servlet-name>InsertUserServlet</servlet-name>
+      <servlet-class>no.nith.InsertUserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-      <servlet-name>InsertBookServlet</servlet-name>
+      <servlet-name>InsertUserServlet</servlet-name>
       <url-pattern>/insert</url-pattern>
   </servlet-mapping>
  

@@ -8,18 +8,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookDAO {
+public class UserDAO {
 	
-	public List<Book> getBooks() {
+	public List<User> getUser() {
 		
 		// Lager en liste (java.util.List og java.util.ArrayList)
 		// som skal inneholde bøkene vi vil ha tilbake
-		List<Book> books = new ArrayList<Book>();
+		List<User> users = new ArrayList<User>();
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
-		String url = "jdbc:mysql://localhost/library";
+		String url = "jdbc:mysql://localhost/mingle";
 		String username = "root";	  // må kanskje oppdateres
 		String password = "1234"; // må nok oppdateres
 		
@@ -28,67 +28,76 @@ public class BookDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "SELECT * FROM books ORDER BY author, title";
+			String sql = "SELECT * FROM users;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
 			ResultSet result = statement.executeQuery();
 			
 			while (result.next()) {
-				String title = result.getString("title");
-				String author = result.getString("author");
+				String fullName = result.getString("fullName");
+				String dateOfBirth = result.getString("dateOfBirth");
+				String sex = result.getString("sex");
+				String email = result.getString("email");
+				String phoneNumber = result.getString("phoneNr");
+				String occupation = result.getString("occupation");
 				
-				books.add(new Book(title, author));
+				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return books;
+		return users;
 	}
 	
-	public List<Book> getBooks(String query) {
+	public List<User> getUser(String query) {
 		
 		// Lager en liste (java.util.List og java.util.ArrayList)
 		// som skal inneholde bøkene vi vil ha tilbake
-		List<Book> books = new ArrayList<Book>();
+		List<User> users = new ArrayList<User>();
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
-		String url = "jdbc:mysql://localhost/library";
+		String url = "jdbc:mysql://localhost/mingle";
 		String username = "root";	  // må kanskje oppdateres
 		String password = "1234"; // må nok oppdateres
+		
 		
 		// Forsøker å koble til databasen
 		try {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "SELECT * FROM books WHERE title LIKE ? ORDER BY author, title";
+			String sql = "SELECT * FROM users;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, query);
 			
 			ResultSet result = statement.executeQuery();
 			
 			while (result.next()) {
-				String title = result.getString("title");
-				String author = result.getString("author");
+				String fullName = result.getString("fullName");
+				String dateOfBirth = result.getString("dateOfBirth");
+				String sex = result.getString("sex");
+				String email = result.getString("email");
+				String phoneNumber = result.getString("phoneNr");
+				String occupation = result.getString("occupation");
 				
-				books.add(new Book(title, author));
+				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return books;
+		return users;
 	}
 
-	public void insertBook(String title, String author) {
+	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) {
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
-		String url = "jdbc:mysql://localhost/library";
+		String url = "jdbc:mysql://localhost/mingle";
 		String username = "root";	  // må kanskje oppdateres
 		String password = "1234"; // må nok oppdateres
 		
@@ -97,11 +106,15 @@ public class BookDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "INSERT INTO books (title, author) VALUES (?, ?);";
+			String sql = "INSERT INTO users (fullName, dateOfBirth, sex, email, PhoneNr, occupation) VALUES (?, ?, ?, ?, ?, ?);";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
-			statement.setString(1, title);
-			statement.setString(2, author);
+			statement.setString(1, fullName);
+			statement.setString(2, dateOfBirth);
+			statement.setString(3, sex);
+			statement.setString(4, email);
+			statement.setString(5, phoneNumber);
+			statement.setString(6, occupation);
 			
 			statement.executeUpdate();
 			

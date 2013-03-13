@@ -23,14 +23,22 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th>Title</th>
-				<th>Author</th>
+				<th>Name</th>
+				<th>Date of Birth</th>
+				<th>Sex</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+				<th>Occupation</th>
 			</tr>
 		</thead>
-		<c:forEach var="book" items="${books}">
+		<c:forEach var="user" items="${users}">
 			<tr>
-				<td><c:out value="${book.title}" /></td>
-				<td><c:out value="${book.author}" /></td>
+				<td><c:out value="${user.fullName}" /></td>
+				<td><c:out value="${user.dateOfBirth}" /></td>
+				<td><c:out value="${user.sex}" /></td>
+				<td><c:out value="${user.email}" /></td>
+				<td><c:out value="${user.phoneNr}" /></td>
+				<td><c:out value="${user.occupation}" /></td>
 			</tr>
 		</c:forEach>
 	</table>
