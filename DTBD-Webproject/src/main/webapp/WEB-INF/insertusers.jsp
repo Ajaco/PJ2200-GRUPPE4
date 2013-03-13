@@ -13,7 +13,6 @@
 	</div>
 
 	<!-- Insert-skjema -->
-
 	<form class="form">
 	
 		<input type="text" name="fullName" class="input-medium"

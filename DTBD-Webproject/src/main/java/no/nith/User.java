@@ -18,6 +18,7 @@ public class User {
 		this.setSex(sex);
 		this.setEmail(email);
 		this.setPhoneNumber(phoneNumber);
+		this.setOccupation(occupation);
 	}
 
 	public String getName() {
