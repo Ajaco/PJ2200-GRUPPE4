@@ -4,20 +4,44 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     version="2.5">
-  <display-name>My Webapp</display-name>
+    
+  	<display-name>DareToBeDigital</display-name>
   
-  <servlet>
+  
+  	<servlet>
   	<servlet-name>myservlet</servlet-name>
   	<servlet-class>no.nith.MyServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
+  	</servlet>
+  	
+  	<servlet-mapping>
   	<servlet-name>myservlet</servlet-name>
   	<url-pattern>/hello</url-pattern>
+  	</servlet-mapping>
+  
+  
+  <servlet>
+      <servlet-name>BookSearchServlet</servlet-name>
+      <servlet-class>no.nith.BookSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>BookSearchServlet</servlet-name>
+      <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>InsertBookServlet</servlet-name>
+      <servlet-class>no.nith.InsertBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>InsertBookServlet</servlet-name>
+      <url-pattern>/insert</url-pattern>
   </servlet-mapping>
  
   
-  <error-page>
+  	<error-page>
     <error-code>404</error-code>
     <location>/404.jsp</location>
-</error-page> 
+	</error-page>
+	
+	 
 </web-app>
