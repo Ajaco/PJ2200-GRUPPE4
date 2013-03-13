@@ -11,19 +11,16 @@ import java.util.List;
 public class UserDAO {
 	
 	public List<User> getUser() {
-		
-		// Lager en liste (java.util.List og java.util.ArrayList)
-		// som skal inneholde bøkene vi vil ha tilbake
+
 		List<User> users = new ArrayList<User>();
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
 		String url = "jdbc:mysql://localhost/mingle";
-		String username = "root";	  // må kanskje oppdateres
-		String password = "1234"; // må nok oppdateres
-		
-		// Forsøker å koble til databasen
+		String username = "root";	
+		String password = "1234"; 
+
 		try {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
@@ -52,19 +49,17 @@ public class UserDAO {
 	
 	public List<User> getUser(String query) {
 		
-		// Lager en liste (java.util.List og java.util.ArrayList)
-		// som skal inneholde bøkene vi vil ha tilbake
 		List<User> users = new ArrayList<User>();
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
 		String url = "jdbc:mysql://localhost/mingle";
-		String username = "root";	  // må kanskje oppdateres
-		String password = "1234"; // må nok oppdateres
+		String username = "root";	
+		String password = "1234"; 
 		
 		
-		// Forsøker å koble til databasen
+
 		try {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
@@ -98,10 +93,9 @@ public class UserDAO {
 		// Kobler oss til databasen library på egen maskin.
 		// SQL-scriptet for å sette opp library ligger på It's Learning.
 		String url = "jdbc:mysql://localhost/mingle";
-		String username = "root";	  // må kanskje oppdateres
-		String password = "1234"; // må nok oppdateres
+		String username = "root";	 
+		String password = "1234"; 
 		
-		// Forsøker å koble til databasen
 		try {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);

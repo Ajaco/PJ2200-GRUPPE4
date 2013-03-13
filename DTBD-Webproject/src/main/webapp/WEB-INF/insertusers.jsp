@@ -13,11 +13,27 @@
 	</div>
 
 	<!-- Insert-skjema -->
+
 	<form class="form">
-		<input type="text" name="title" class="input-medium"
-				value="<c:out value="${param.title}" />">
-		<input type="text" name="author" class="input-medium"
-				value="<c:out value="${param.author}" />">
+	
+		<input type="text" name="fullName" class="input-medium"
+				value="<c:out value="${param.fullName}" />">
+				
+		<input type="text" name="dateOfBirth" class="input-medium"
+				value="<c:out value="${param.dateOfBirth}" />">
+				
+		<input type="text" name="sex" class="input-medium"
+				value="<c:out value="${param.sex}" />">
+				
+		<input type="text" name="email" class="input-medium"
+				value="<c:out value="${param.email}" />">
+		
+		<input type="text" name="phoneNumber" class="input-medium"
+				value="<c:out value="${param.phoneNumber}" />">
+		
+		<input type="text" name="occupation" class="input-medium"
+				value="<c:out value="${param.occupation}" />">
+						
 		<button type="submit" class="btn">Insert user</button>
 	</form>
 
