@@ -13,7 +13,8 @@
 	</div>
 
 	<!-- Insert-skjema -->
-	<form class="form">
+
+	<form class="form" id="inputform">
 	
 		<input type="text" name="fullName" class="input-medium"
 				value="<c:out value="${param.fullName}" />">

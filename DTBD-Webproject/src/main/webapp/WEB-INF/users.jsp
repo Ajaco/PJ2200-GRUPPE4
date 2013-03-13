@@ -23,22 +23,22 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th>Name</th>
+				<th>Navn</th>
 				<th>Date of Birth</th>
 				<th>Sex</th>
 				<th>Email</th>
-				<th>Phone Number</th>
+				<th>Phone Nr</th>
 				<th>Occupation</th>
 			</tr>
 		</thead>
-		<c:forEach var="user" items="${users}">
+		<c:forEach var="User" items="${user}">
 			<tr>
-				<td><c:out value="${user.fullName}" /></td>
-				<td><c:out value="${user.dateOfBirth}" /></td>
-				<td><c:out value="${user.sex}" /></td>
-				<td><c:out value="${user.email}" /></td>
-				<td><c:out value="${user.phoneNr}" /></td>
-				<td><c:out value="${user.occupation}" /></td>
+				<td><c:out value="${User.name}" /></td>
+				<td><c:out value="${User.dateOfBirth}" /></td>
+				<td><c:out value="${User.sex}" /></td>
+				<td><c:out value="${User.email}" /></td>
+				<td><c:out value="${User.phoneNumber}" /></td>
+				<td><c:out value="${User.occupation}" /></td>
 			</tr>
 		</c:forEach>
 	</table>

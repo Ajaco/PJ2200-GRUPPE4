@@ -64,7 +64,7 @@ public class UserDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "SELECT * FROM users;";
+			String sql = "SELECT * FROM users WHERE fullName LIKE ? ORDER BY fullName;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, query);
 			
