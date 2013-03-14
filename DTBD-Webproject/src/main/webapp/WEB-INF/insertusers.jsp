@@ -2,7 +2,8 @@
 
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -15,26 +16,33 @@
 	<!-- Insert-skjema -->
 
 	<form class="form" id="inputform">
+
 		<input type="text" name="fullName" class="input-medium"
 				value="<c:out value="${param.fullName}" />">
-				
+
 		<input type="text" name="dateOfBirth" class="input-medium"
 				value="<c:out value="${param.dateOfBirth}" />">
-				
+
 		<input type="text" name="sex" class="input-medium"
 				value="<c:out value="${param.sex}" />">
-				
+
 		<input type="text" name="email" class="input-medium"
 				value="<c:out value="${param.email}" />">
-		
+
 		<input type="text" name="phoneNumber" class="input-medium"
 				value="<c:out value="${param.phoneNumber}" />">
-				
-		<input type="text" name="occupation" class="input-medium"
+		<select type="text" name="occupation" class="input-medium"
 				value="<c:out value="${param.occupation}" />">
-						
-		<button type="submit" class="btn" onClick="this.form.reset()">Insert user</button>
+		<option value = "Developer">Developer</option>
+		<option value = "Developer">3D Artist</option>
+		<option value = "Developer">Graphic Designer</option>
+		<option value = "Developer">Audio</option>
+		</select>
+
+
+		<button type="submit" class="btn">Insert user</button>
 	</form>
+		
 
 	<!-- Resultater -->
 	<table class="table">
@@ -62,3 +70,4 @@
 
 </body>
 </html>
+
