@@ -15,7 +15,6 @@
 	<!-- Insert-skjema -->
 
 	<form class="form" id="inputform">
-		
 		<input type="text" name="fullName" class="input-medium"
 				value="<c:out value="${param.fullName}" />">
 				
@@ -30,10 +29,9 @@
 		
 		<input type="text" name="phoneNumber" class="input-medium"
 				value="<c:out value="${param.phoneNumber}" />">
-		
+				
 		<input type="text" name="occupation" class="input-medium"
 				value="<c:out value="${param.occupation}" />">
-		
 						
 		<button type="submit" class="btn" onClick="this.form.reset()">Insert user</button>
 	</form>
