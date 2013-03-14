@@ -31,10 +31,13 @@
 		<input type="text" name="phoneNumber" class="input-medium"
 				value="<c:out value="${param.phoneNumber}" />">
 		
-		<input type="text" name="occupation" class="input-medium"
-				value="<c:out value="${param.occupation}" />">
+		<select>
+				<option><input type="text" name="phoneNumber" class="input-medium"
+				value="<c:out value="${param.phoneNumber}" />"></option>
+		</select>
+		
 						
-		<button type="submit" class="btn">Insert user</button>
+		<button type="submit" class="btn" onClick="this.form.reset()">Insert user</button>
 	</form>
 
 	<!-- Resultater -->
