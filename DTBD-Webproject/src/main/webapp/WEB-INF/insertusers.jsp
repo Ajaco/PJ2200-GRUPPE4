@@ -39,8 +39,10 @@
 		</select>
 
 
-		<button type="submit" class="btn">Insert user</button>
+		<button type="submit" class="btn" action="/search">Insert user</button>
 	</form>
+	<button type="searchLink" "class="btn" ONCLICK="window.location.href='/search'">Link to search</button>
+	<a href="/search">mylink</a>
 		
 
 	<!-- Resultater -->

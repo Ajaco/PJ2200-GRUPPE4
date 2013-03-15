@@ -1227,6 +1227,7 @@ input[type="checkbox"]:focus {
 }
 
 .uneditable-input {
+
   overflow: hidden;
   white-space: nowrap;
 }
@@ -1291,6 +1292,7 @@ textarea::-webkit-input-placeholder {
 
 .input-medium {
   width: 150px;
+  height:300px;
 }
 
 .input-large {
@@ -5274,7 +5276,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .modal-footer .btn + .btn {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-left: 5px;
 }
 

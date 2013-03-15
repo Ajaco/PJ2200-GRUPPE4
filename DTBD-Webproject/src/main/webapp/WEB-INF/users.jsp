@@ -3,13 +3,14 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/sorttable.js"></script>
 </head>
 
 <body>
 
 	<div class="container"></div>
 	<div class="page-header">
-		<h1>Books</h1>
+		<h1>Users</h1>
 	</div>
 
 	<!-- Søkeskjema -->
@@ -20,7 +21,7 @@
 	</form>
 
 	<!-- Resultater -->
-	<table class="table">
+	<table class="sortable">
 		<thead>
 			<tr>
 				<th>Navn</th>
@@ -31,6 +32,7 @@
 				<th>Occupation</th>
 			</tr>
 		</thead>
+		<tbody>
 		<c:forEach var="User" items="${user}">
 			<tr>
 				<td><c:out value="${User.name}" /></td>
@@ -41,6 +43,7 @@
 				<td><c:out value="${User.occupation}" /></td>
 			</tr>
 		</c:forEach>
+		</tbody>
 	</table>
 
 </body>
