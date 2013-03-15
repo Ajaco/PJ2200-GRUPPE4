@@ -1,19 +1,39 @@
-body{ 
+body, html{ 
  margin:0; 
  padding:0; 
  height:100%;
-
 }
 
 li{
 display:inline;
-padding-left:50;
+margin:-2px;
+height:33px;
 }
+
+p{
+	text-align: left;
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 12;
+	overflow: hidden;
+}
+h1{
+	text-align: left;
+	font-family: sans-serif;
+	font-style: italic;
+	font-size:20;
+	overflow: hidden;
+}
+a:link {color:#333; text-decoration: none}      /* unvisited link */
+a:visited {color:#333;}  /* visited link */
+a:hover {color:#000;}  /* mouse over link */
+a:active {color:#dfe1e4;}  /* selected link */
 
 #container {
    height:100%;
    position:relative;
    width:100%;
+   overflow: auto;
 }
 
 .logo{
@@ -28,23 +48,23 @@ margin-right:auto;
 .liwrap{
 	margin-left: auto;
 	margin-right: auto;
-	width:1100px;
+	width:988px;
+	height:33px;
+
 }
 
 .menu{
 background-color:#333;
-margin:0;
+margin-top:0;
 }
 
 .content{
 position: relative;
 top:0px;
 width:950px;
-height:auto;
+height:100%;
 margin-left:auto;
 margin-right:auto;
-background-image: url(img/mainbg.png);
-
 }
 
 .topleft{
@@ -56,6 +76,18 @@ background-image: url(img/mainbg.png);
 	height:186px;
 }
 
+.applygroup{
+	position:absolute;
+	right:15px;
+	top:59px;
+}
+
+.applysolo{
+	position:absolute;
+	left:15px;
+	top:125px;
+}
+
 .bottomleft{
 	position:absolute;
 	left:0;
@@ -63,6 +95,7 @@ background-image: url(img/mainbg.png);
 	background-image:url(img/bottomleft.png);
 	width:521px;
 	height:186px;
+	overflow: hidden;
 }
 
 .right{
@@ -74,24 +107,51 @@ background-image: url(img/mainbg.png);
 	height:394px;
 }
 
+.generalnews{
+position:relative;
+top:53px;
+width:950px;
+background-color:#dfe1e4;
+border: solid 1px #333;
+}
+
+.newswrapper{
+background-image: url(img/generalnews.png);
+	position:relative;
+	height: 33px;
+	width: 440px;
+	top:454px;
+	
+}
+.whatis{
+position:absolute;
+left:10px;
+top:35px;
+right:10px;
+color:white;
+height:120px;
+font-size: 15px;
+}
+
+.newstext{
+	position:relative;
+	color:black;
+	margin:10px;
+}
 .boxedtextright{
 	position:absolute;
 	left:10px;
 	top:35px;
 	right:10px;
-	text-align: left;
-	font-family: sans-serif;
-	font-style: normal;
 	color:white;
-	font-size: 12;
-	overflow: hidden;
 	height:330px;
 }
   
 .footer{
 position:absolute;
-bottom:0;
+bottom:0px;
 width:100%;
-height:60px;   
+height:60px;
+margin-top:10;   
 background-color:#333;
 } 
