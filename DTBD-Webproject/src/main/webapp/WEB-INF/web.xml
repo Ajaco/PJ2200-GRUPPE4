@@ -8,34 +8,122 @@
   	<display-name>DareToBeDigital</display-name>
   
   
+  
+  
   	<servlet>
-  	<servlet-name>myservlet</servlet-name>
-  	<servlet-class>no.nith.MyServlet</servlet-class>
+  	<servlet-name>helloservlet</servlet-name>
+  	<servlet-class>no.nith.HelloServlet</servlet-class>
   	</servlet>
   	
   	<servlet-mapping>
-  	<servlet-name>myservlet</servlet-name>
+  	<servlet-name>helloservlet</servlet-name>
   	<url-pattern>/hello</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<servlet>
+  	<servlet-name>contestservlet</servlet-name>
+  	<servlet-class>no.nith.ContestServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  	<servlet-name>contestservlet</servlet-name>
+  	<url-pattern>/contest</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<servlet>
+  	<servlet-name>newsservlet</servlet-name>
+  	<servlet-class>no.nith.NewsServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  	<servlet-name>newsservlet</servlet-name>
+  	<url-pattern>/news</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<servlet>
+  	<servlet-name>contactservlet</servlet-name>
+  	<servlet-class>no.nith.ContactServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  	<servlet-name>contactservlet</servlet-name>
+  	<url-pattern>/contact</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<servlet>
+  	<servlet-name>aboutservlet</servlet-name>
+  	<servlet-class>no.nith.AboutServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+  	<servlet-name>aboutservlet</servlet-name>
+  	<url-pattern>/about</url-pattern>
   	</servlet-mapping>
   
   
-  <servlet>
-      <servlet-name>UserSearchServlet</servlet-name>
-      <servlet-class>no.nith.UserSearchServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>UserSearchServlet</servlet-name>
-      <url-pattern>/search</url-pattern>
-  </servlet-mapping>
   
-  <servlet>
-      <servlet-name>InsertUserServlet</servlet-name>
-      <servlet-class>no.nith.InsertUserServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>InsertUserServlet</servlet-name>
-      <url-pattern>/insert</url-pattern>
-  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  	<servlet>
+  	<servlet-name>UserSearchServlet</servlet-name>
+  	<servlet-class>no.nith.UserSearchServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>UserSearchServlet</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  	</servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  	<servlet>
+    <servlet-name>InsertUserServlet</servlet-name>
+    <servlet-class>no.nith.InsertUserServlet</servlet-class>
+  	</servlet>
+  	
+  	<servlet-mapping>
+    <servlet-name>InsertUserServlet</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  	</servlet-mapping>
  
   
   	<error-page>

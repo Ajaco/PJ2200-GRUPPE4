@@ -14,11 +14,11 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
- 	          <li><a href="#">\\ the contest</a></li>
-            <li><a href="#">\\ apply</a></li>
-            <li><a href="#">\\ news</a></li>
-            <li><a href="#">\\ contact</a></li>
-            <li><a href="#">\\ about</a></li>
+ 	          <li><a href="/contest">\\ the contest</a></li>
+            <li><a href="/apply">\\ apply</a></li>
+            <li><a href="/news">\\ news</a></li>
+            <li><a href="/contact">\\ contact</a></li>
+            <li><a href="/about">\\ about</a></li>
         </ul>
       </div>
   </div>
@@ -53,10 +53,6 @@
       <div class="spotlight">
         <p class="spotlighttext">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec purus neque, id interdum nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pulvinar euismod ligula, non porttitor lorem porttitor a. Nam nec dolor sem, a ullamcorper magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla nunc nec libero cursus aliquet. Proin pharetra tempus erat at scelerisque. Cras pellentesque leo id augue placerat iaculis vestibulum justo cursus. Praesent dapibus quam non augue pharetra in pellentesque orci semper.
-
-          Maecenas eget pharetra justo. Vivamus sit amet lacus nibh. Aenean egestas metus eget arcu fermentum semper. Nulla et est ipsum. Proin varius sodales eleifend. Sed et tortor sem, nec ultricies lacus. Nullam tempor, mi vel dignissim laoreet, metus odio ultricies erat, posuere sodales erat leo porta leo. Curabitur commodo dui vel risus eleifend dictum. Maecenas sem metus, faucibus ac rhoncus ac, tincidunt nec mauris. Fusce vel neque purus. Aliquam id interdum quam.Donec vehicula aliquam vestibulum.
-
-          Vivamus tincidunt egestas neque non laoreet. In lectus leo, ultrices ut aliquam non, laoreet sed lorem. Donec imperdiet vestibulum ullamcorper. Phasellus sagittis pulvinar sollicitudin. Sed erat sem, pulvinar id pharetra nec, imperdiet eget justo. Donec vestibulum lectus et sapien aliquet in venenatis sapien 
         </p>
       </div>
     </div>
