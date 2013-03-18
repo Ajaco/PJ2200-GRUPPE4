@@ -7,7 +7,163 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+body, html{ 
+ margin:0; 
+ padding:0; 
+ height:100%;
+}
 
+li{
+display:inline;
+margin:-2px;
+height:33px;
+}
+
+p{
+  text-align: left;
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 12;
+  overflow: hidden;
+}
+h1{
+  text-align: left;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size:20;
+  overflow: hidden;
+}
+a:link {color:#333; text-decoration: none}      /* unvisited link */
+a:visited {color:#333;}  /* visited link */
+a:hover {color:#000;}  /* mouse over link */
+a:active {color:#dfe1e4;}  /* selected link */
+
+#container {
+   height:100%;
+   position:relative;
+   width:100%;
+   overflow: auto;
+}
+
+.logo{
+background-image: url(img/Logo.png);
+height:52px;
+width:119px;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+}
+
+.liwrap{
+  margin-left: auto;
+  margin-right: auto;
+  width:988px;
+  height:33px;
+
+}
+
+.menu{
+background-color:#333;
+margin-top:0;
+}
+
+.content{
+position: relative;
+top:0px;
+width:950px;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.topleft{
+  left:0;
+  top:20px;
+  background-image:url(img/topleft.png);
+  background-repeat:no-repeat;
+  width:521px;
+  height:186px;
+}
+
+.applygroup{
+  position:absolute;
+  right:15px;
+  top:59px;
+}
+
+.applysolo{
+  position:absolute;
+  left:15px;
+  top:125px;
+}
+
+.bottomleft{
+  position:absolute;
+  left:0;
+  top:228px;
+  background-image:url(img/bottomleft.png);
+  width:521px;
+  height:186px;
+  overflow: hidden;
+}
+
+.right{
+  position:absolute;
+  right:0;
+  top:20px;
+  background-image:url(img/right.png);
+  width:409px;
+  height:394px;
+}
+
+.generalnews{
+position:relative;
+top:53px;
+width:950px;
+background-color:#dfe1e4;
+border: solid 1px #333;
+}
+
+.newswrapper{
+background-image: url(img/generalnews.png);
+  position:relative;
+  height: 33px;
+  width: 440px;
+  top:454px;
+  
+}
+.whatis{
+position:absolute;
+left:10px;
+top:35px;
+right:10px;
+color:white;
+height:120px;
+font-size: 15px;
+}
+
+.newstext{
+  position:relative;
+  color:black;
+  margin:10px;
+}
+.boxedtextright{
+  position:absolute;
+  left:10px;
+  top:35px;
+  right:10px;
+  color:white;
+  height:330px;
+}
+  
+.footer{
+position:absolute;
+bottom:0px;
+width:100%;
+height:60px;
+margin-top:10;   
+background-color:#333;
+} 
 .clearfix {
   *zoom: 1;
 }
@@ -40,18 +196,6 @@
           box-sizing: border-box;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
 
 audio,
 canvas,
@@ -63,23 +207,6 @@ video {
 
 audio:not([controls]) {
   display: none;
-}
-
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-
-a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-a:hover,
-a:active {
-  outline: 0;
 }
 
 sub,
@@ -164,82 +291,6 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-@media print {
-  * {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  @page  {
-    margin: 0.5cm;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
-}
-
-a {
-  color: #0088cc;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #005580;
-  text-decoration: underline;
-}
 
 .img-rounded {
   -webkit-border-radius: 6px;
