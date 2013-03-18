@@ -8,6 +8,7 @@
 <body>
 
 <div id="container">
+<div class="frostytop"></div>
   <!-- HEADER -->
   <div class="header">
     <div class="headerbg"></div>
@@ -85,6 +86,7 @@
 
 
   </div> <!-- Content -->
+<div class="frostybottom"></div>
 <div class="footer"></div>
 </div><!-- Container-->
 </body>

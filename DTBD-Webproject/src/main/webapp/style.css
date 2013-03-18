@@ -33,8 +33,8 @@ color:#ccc;
 
 a:link {color:#ccc; text-decoration: none}
 a:visited {color:#ccc;} 
-a:hover {color:#d6b74c;}
-a:active {color:#d6b74c;} 
+a:hover {color:#b7d8f6;}
+a:active {color:#b7d8f6;} 
 
 
 
@@ -44,6 +44,15 @@ position:relative;
 width:100%;
 overflow: visible;
 }
+
+.frostytop{
+	background-image: url(img/frostytop.png);
+	background-repeat: repeat-x;
+	height:154px;
+	width:auto;
+	margin-bottom:-100px;
+}
+
 
 
 
@@ -232,8 +241,8 @@ margin-bottom:5px;
 
 .footer{
 position: relative;
-margin-top:20px;
+background-image: url(img/frostybottom.png);
+background-repeat: repeat-x;
 width:100%;
-height:60px;   
-background-color:#333;
+height:350px;   
 } 
