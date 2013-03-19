@@ -16,6 +16,7 @@
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
  	          <li><a href="/contest">\\ the contest</a></li>
+            <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/news">\\ news</a></li>
             <li><a href="/contact">\\ contact</a></li>
@@ -86,7 +87,6 @@
 
 
   </div> <!-- Content -->
-<div class="frostybottom"></div>
 <div class="footer"></div>
 </div><!-- Container-->
 </body>
