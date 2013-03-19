@@ -25,7 +25,35 @@
 
 
   <div class="content">
-    <h1>About</h1>
+    <div class="aboutheader"></div>
+    <div class="aboutingress">
+      <p class="aboutingresstext">
+        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+      </p>
+    </div>
+    <div class="about">
+      <p class="abouttext">
+        <img src="http://www.randomwebsite.com/images/head.jpg" class="newspic" alt="about"></img>
+        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+                Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+                Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+                Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+                Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.</br></br>
+
+        Dare to be Digital was founded in the year 2000 because fuck you. 
+      </p>
+    </div>
+    <a href="http://www.daretobedigital.com/37_About.html" target="_"><div class="readmore"></div></a>
   </div> <!-- Content -->
 <div class="footer"></div>
 </div><!-- Container-->

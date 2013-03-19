@@ -31,6 +31,7 @@ overflow: hidden;
 color:#ccc;
 }
 
+
 a:link {color:#ccc; text-decoration: none}
 a:visited {color:#ccc;} 
 a:hover {color:#b7d8f6;}
@@ -237,6 +238,60 @@ position:relative;
 float:right;
 margin-left:5px;
 margin-bottom:5px;
+}
+
+
+/* ABOUT */
+
+/*HEADER PICTURE*/
+.aboutheader{
+margin-top:20px;
+position:relative;
+background-image: url(img/aboutheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+
+/*TOP SECTION*/
+.aboutingress{
+position:relative;
+margin-top:5px;
+margin-bottom:0px;
+width:100%;
+height:auto;
+background-color:#b7d8f6;
+border: solid 1px #333;
+}
+.aboutingresstext{
+color:#333;
+margin:10px;
+text-align: left;
+}
+
+/*BOTTOM SECTION*/
+.about{
+position:relative;
+margin-top:5px;
+margin-bottom:0px;
+width:100%;
+height:auto;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+}
+.abouttext{
+color:white;
+margin:10px;
+text-align: left;
+}
+
+/*SELF EXPLANATORY*/
+.readmore{
+width:407px;
+height:33px;
+background-image: url(img/readmore.png);
+margin-top:30px;
 }
 
 .footer{
