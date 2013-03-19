@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.SQLException;
 
 public class InsertUserServlet extends HttpServlet {
 	
@@ -19,12 +20,16 @@ public class InsertUserServlet extends HttpServlet {
 		String[] email = req.getParameterValues("email");
 		String[] phoneNumber = req.getParameterValues("phoneNumber");
 		String[] occupation = req.getParameterValues("occupation");
-
-		for(int i = 0; i < fullName.length; i++){
-			new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i]);	
-		}
 		
-		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/mingle.jsp");
-		view.forward(req, resp);
+		try{
+			for(int i = 0; i < fullName.length; i++){
+				if(fullName[i] != null && !fullName[i].isEmpty() )
+					new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i]);	
+			}
+			resp.sendRedirect("/hello");
+		}catch(SQLException e){
+			//System.out.println(e.getMessage());
+			resp.sendRedirect("/asdlkjsadlkj");
+		}
 	}
 }

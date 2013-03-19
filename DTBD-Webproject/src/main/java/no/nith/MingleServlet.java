@@ -12,17 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class MingleServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		
-		String fullName = req.getParameter("fullName");
-		String dateOfBirth = req.getParameter("dateOfBirth");
-		String sex = req.getParameter("sex");
-		String email = req.getParameter("email");
-		String phoneNumber = req.getParameter("phoneNumber");
-		String occupation = req.getParameter("occupation");
-		
-		
-		new UserDAO().insertUser(fullName, dateOfBirth, sex, email, phoneNumber, occupation);	
-		
+			
 		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/mingle.jsp");
 		view.forward(req, resp);
 	}
