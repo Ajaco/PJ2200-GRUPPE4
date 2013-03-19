@@ -11,10 +11,22 @@ import javax.servlet.http.HttpServletResponse;
 
 public class MingleServlet extends HttpServlet {
 
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws IOException, ServletException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		
-		// Serverer JSP-siden responsen vi har klargjort
+		String fullName = req.getParameter("fullName");
+		String dateOfBirth = req.getParameter("dateOfBirth");
+		String sex = req.getParameter("sex");
+		String email = req.getParameter("email");
+		String phoneNumber = req.getParameter("phoneNumber");
+		String occupation = req.getParameter("occupation");
+		
+		
+		new UserDAO().insertUser(fullName, dateOfBirth, sex, email, phoneNumber, occupation);
+		
+		List<User> user = new UserDAO().getUser();
+		
+		req.setAttribute("user", user);		
+		
 		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/mingle.jsp");
 		view.forward(req, resp);
 	}

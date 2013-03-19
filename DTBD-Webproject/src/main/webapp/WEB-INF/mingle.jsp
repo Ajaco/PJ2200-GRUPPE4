@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
   <title>Dare to be Digital - Mingle</title>
@@ -26,7 +27,6 @@
       </div>
   </div>
 
-
   <div class="content">
 
     <ul class="registermenu">
@@ -54,82 +54,75 @@
 
                         <div id="horizontalwrapper">
 
-                          <!-- PAGE 0 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 0</p>
-                              <div class="boxcontent">
-                                <p>
-                                  GROUP REGISTER
-                                </p>
-                              </div>
-                              <a class="next" href="#page0">SUBMIT</a>
-                          </div>
+                          <form class="form" id="inputform">
+                            <!-- PAGE 0 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 0</p>
+                                <div class="boxcontent">
+                                  GROUP REGISTRY
+                                </div>
+                                <a class="next" href="#page0">SUBMIT</a>
+                            </div>
 
-                          <!-- PAGE 1 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 1</p>
-                              <div class="boxcontent">
-                                <p>
-                                  HI. WELCOME. WHAT IS YOUR NAME?
-                                </p>
-                              </div>
-                              <a class="next" href="#page2">Next</a>
-                          </div>
+                            <!-- PAGE 1 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 1</p>
+                                <div class="boxcontent">
+                                  <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
+                                </div>
+                                <a class="next" href="#page2">Next</a>
+                            </div>
 
-                          <!-- PAGE 2 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 2</p>
-                              <div class="boxcontent">
-                                <p>
-                                  THIS IS ONLY THE BEGINING.
-                                </p>
-                              </div>
-                              <a class="next" href="#page3">Next</a>
-                          </div>
+                            <!-- PAGE 2 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 2</p>
+                                <div class="boxcontent">
+                                  <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
+                                </div>
+                                <a class="next" href="#page3">Next</a>
+                            </div>
 
-                          <!-- PAGE 3 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 3</p>
-                              <div class="boxcontent">
-                                <p>
-                                  GETTING TIRED YET?!
-                                </p>
-                              </div>
-                              <a class="next" href="#page4">Next</a>
-                          </div>
+                            <!-- PAGE 3 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 3</p>
+                                <div class="boxcontent">
+                                  <input type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
+                                </div>
+                                <a class="next" href="#page4">Next</a>
+                            </div>
 
-                          <!-- PAGE 4 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 4</p>
-                              <div class="boxcontent">
-                                <p>
-                                  STEP 4. YOURE PAST HALFWAY NOW. KEEP GOING.
-                                </p>
-                              </div>
-                              <a class="next" href="#page5">Next</a>
-                          </div>
+                            <!-- PAGE 4 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 4</p>
+                                <div class="boxcontent">
+                                  <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
+                                </div>
+                                <a class="next" href="#page5">Next</a>
+                            </div>
 
-                          <!-- PAGE 5 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 5</p>
-                              <div class="boxcontent">
-                                <p>
-                                  STEP 5. ALMOST THERE!!!!!
-                                </p>
-                              </div>
-                              <a class="next" href="#page6">Next</a>
-                          </div>
+                            <!-- PAGE 5 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 5</p>
+                                <div class="boxcontent">
+                                  <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
+                                </div>
+                                <a class="next" href="#page6">Next</a>
+                            </div>
 
-                          <!-- PAGE 6 -->
-                          <div class="currentpage">
-                            <p class="pagetitle">Page 6</p>
-                              <div class="boxcontent">
-                                <p>
-                                  THIS IS THE FINAL STEP. PLEASE CONFIRM TO SUBMIT YOURSELF TO THE ALMIGHTY DATABASE
-                                </p>
-                              </div>
-                              <a class="next" href="#page6">Submit</a>
-                          </div>
+                            <!-- PAGE 6 -->
+                            <div class="currentpage">
+                              <p class="pagetitle">Page 6</p>
+                                <div class="boxcontent">
+                                  <select type="text" name="occupation" class="input-medium" value="<c:out value="${param.occupation}" />">
+                                  <option value = "Developer">Developer</option>
+                                  <option value = "3D Artist">3D Artist</option>
+                                  <option value = "Graphic Designer">Graphic Designer</option>
+                                  <option value = "Audio">Audio</option>
+                                  </select>
+                                </div>
+                                  <button type="submit" action="/search">Insert user</button>
+                            </div>
+                          </form>
 
                         </div> <!-- HORIZONTAL WRAPPER-->
                     </div><!-- PAGE 6 -->

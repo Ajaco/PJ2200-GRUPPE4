@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class InsertUserServlet extends HttpServlet {
 	
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		
 		String fullName = req.getParameter("fullName");
 		String dateOfBirth = req.getParameter("dateOfBirth");
