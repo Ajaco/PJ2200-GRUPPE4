@@ -13,21 +13,18 @@ public class InsertUserServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		
-		String fullName = req.getParameter("fullName");
-		String dateOfBirth = req.getParameter("dateOfBirth");
-		String sex = req.getParameter("sex");
-		String email = req.getParameter("email");
-		String phoneNumber = req.getParameter("phoneNumber");
-		String occupation = req.getParameter("occupation");
+		String[] fullName = req.getParameterValues("fullName");
+		String[] dateOfBirth = req.getParameterValues("dateOfBirth");
+		String[] sex = req.getParameterValues("sex");
+		String[] email = req.getParameterValues("email");
+		String[] phoneNumber = req.getParameterValues("phoneNumber");
+		String[] occupation = req.getParameterValues("occupation");
+
+		for(int i = 0; i < fullName.length; i++){
+			new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i]);	
+		}
 		
-		
-		new UserDAO().insertUser(fullName, dateOfBirth, sex, email, phoneNumber, occupation);
-		
-		List<User> user = new UserDAO().getUser();
-		
-		req.setAttribute("user", user);
-		
-		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/insertusers.jsp");
+		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/mingle.jsp");
 		view.forward(req, resp);
 	}
 }

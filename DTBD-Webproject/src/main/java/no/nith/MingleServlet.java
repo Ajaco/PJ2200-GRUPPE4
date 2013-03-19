@@ -21,11 +21,7 @@ public class MingleServlet extends HttpServlet {
 		String occupation = req.getParameter("occupation");
 		
 		
-		new UserDAO().insertUser(fullName, dateOfBirth, sex, email, phoneNumber, occupation);
-		
-		List<User> user = new UserDAO().getUser();
-		
-		req.setAttribute("user", user);		
+		new UserDAO().insertUser(fullName, dateOfBirth, sex, email, phoneNumber, occupation);	
 		
 		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/mingle.jsp");
 		view.forward(req, resp);

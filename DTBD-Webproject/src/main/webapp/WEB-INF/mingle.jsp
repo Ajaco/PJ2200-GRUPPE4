@@ -41,6 +41,22 @@
       NOTE: BY REGISTERING YOUR USER HERE, YOU DO NOT REGISTER FOR THE TOURNAMENT ITSELF.</br> THIS FEATURE IS ONLY USED FOR FINDING A GROUP, OR MEMBERS FOR YOUR GROUP. </br>IN ORDER TO APPLY TO THE TOURNAMENT WITH A FULL GROUP - PLEASE VISIT THE APPLY PAGE
       </p>
     </div>
+<form class="form" id"=inputform" action="/insert">
+  <c:forEach var="i" begin="1" end="2">
+    <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
+    <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
+    <input type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
+    <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
+    <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
+    <select type="text" name="occupation" class="input-medium" value="<c:out value="${param.occupation}" />">
+    <option value = "Developer">Developer</option>
+    <option value = "3D Artist">3D Artist</option>
+    <option value = "Graphic Designer">Graphic Designer</option>
+    <option value = "Audio">Audio</option>
+    </select>
+  </c:forEach>
+<button type="submit">Insert user</button>
+</form>
 
     <div id="pageswrapper">
       <div id="pages">
@@ -54,8 +70,8 @@
 
                         <div id="horizontalwrapper">
 
-                          <form class="form" id="inputform">
-                            <!-- PAGE 0 -->
+                          <form class="form" id="inputform" action="/insert">
+                            <!-- PAGE 0 //GROUP REGISTRY-->
                             <div class="currentpage">
                               <p class="pagetitle">Page 0</p>
                                 <div class="boxcontent">
@@ -119,8 +135,9 @@
                                   <option value = "Graphic Designer">Graphic Designer</option>
                                   <option value = "Audio">Audio</option>
                                   </select>
+                                  <button type="submit" action="/insert">Insert user</button>
                                 </div>
-                                  <button type="submit" action="/search">Insert user</button>
+                                  
                             </div>
                           </form>
 

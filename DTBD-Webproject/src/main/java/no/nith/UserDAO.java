@@ -87,6 +87,7 @@ public class UserDAO {
 		return users;
 	}
 
+		
 	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) {
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
