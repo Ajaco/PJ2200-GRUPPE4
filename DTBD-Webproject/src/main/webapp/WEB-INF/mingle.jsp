@@ -28,7 +28,20 @@
 
 
   <div class="content">
-    <h1>Mingle</h1>
+    <div class="findgroup">
+      <div class="step1">
+        <div class="step2">
+          <div class="step3">
+            <div class="step4">
+              <div class="step5">
+                <div class="step6">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> <!-- Content -->
 <div class="footer"></div>
 </div><!-- Container-->
