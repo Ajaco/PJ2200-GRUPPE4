@@ -14,6 +14,8 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
+          
+            <li><a href="/hello">\\ home</a></li>
  	          <li><a href="/contest">\\ the contest</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/news">\\ news</a></li>
