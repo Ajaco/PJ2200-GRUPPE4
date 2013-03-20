@@ -16,7 +16,7 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
-            <li><a href="/hello">\\ home</a></li>
+            <li><a href="hello">\\ home<a></li>
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
@@ -56,35 +56,44 @@
 
                           <form action="/insert">
                             <!-- PAGE 0 //GROUP REGISTRY-->
-                            <div class="currentpage">
-                              <p class="pagetitle">Page 0</p>
-                                <div class="boxcontent">
-                                  <div class="formwrapper">
-                                      <c:forEach var="i" begin="1" end="6">
+                            <div class="page0 currentpage">
+                              <div class="boxcontent">
+                                <div class="groupwrap">
+                                  <p class="groupname">Group name</p>
+                                  <input type="text" name="groupName" class="input-groupname" value="<c:out value="${param.groupName}" />">
+                                </div>
+                                <div class="formwrapper">
+                                    <ul class="groupinfoul">
+                                      <li class="liname">Name</li>
+                                      <li class="lidob">Date of Birth [yyyy.mm.dd]</li>
+                                      <li class="ligender">Gender</li>
+                                      <li class="limail">Email adress</li>
+                                      <li class="liphone">Phone Number</li>
+                                      <li class="lioccu">Field of expertise</li>
+                                    </ul>
+                                    <c:forEach var="i" begin="1" end="4">
                                         <input type="text" name="fullName" class="input-group" value="<c:out value="${param.fullName}" />">
                                         <input type="text" name="dateOfBirth" class="input-group" value="<c:out value="${param.dateOfBirth}" />">
-                                        <select type="text" name="sex" class="input-group" value="<c:out value="${param.sex}" />">
+                                        <select type="text" name="sex" class="input-sex" value="<c:out value="${param.sex}" />">
                                           <option value = "M">Male</option>
                                           <option value = "F">Female</option>
                                         </select>
                                         <input type="text" name="email" class="input-group" value="<c:out value="${param.email}" />">
                                         <input type="text" name="phoneNumber" class="input-group" value="<c:out value="${param.phoneNumber}" />">
-                                        <select type="text" name="occupation" class="input-group" value="<c:out value="${param.occupation}" />">
+                                        <select type="text" name="occupation" class="input-occu" value="<c:out value="${param.occupation}" />">
                                           <option value = "Developer">Developer</option>
                                           <option value = "3D Artist">3D Artist</option>
                                           <option value = "Graphic Designer">Graphic Designer</option>
                                           <option value = "Audio">Audio</option>
                                         </select>
-                                      </c:forEach>
-                                      <button type="submit">Insert user</button>
-                                    
-                                  </div>
+                                    </c:forEach>
+                                    <button type="submit" action="/insert" class="groupsubmit"><img src="img/register.png"></button>
                                 </div>
-                                <a class="next" href="#page0">SUBMIT</a>
+                              </div>
                             </div>
 
                             <!-- PAGE 1 -->
-                            <div class="currentpage">
+                            <div class="page1 currentpage">
                               <p class="pagetitle">Hello! Thank you for registrating. To start things off; What's your name?</p>
                                 <div class="boxcontent"> 
                                   <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
@@ -93,7 +102,7 @@
                             </div>
 
                             <!-- PAGE 2 -->
-                            <div class="currentpage">
+                            <div class="page2 currentpage">
                               <p class="pagetitle">Next off.. we need to know when you are born. Format: yyyy.mm.dd</p>
                                 <div class="boxcontent">
                                   <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
@@ -102,7 +111,7 @@
                             </div>
 
                             <!-- PAGE 3 -->
-                            <div class="currentpage">
+                            <div class="page3 currentpage">
                               <p class="pagetitle">This is a tricky one; what's your gender?</p>
                                 <div class="boxcontent">
                                   <select type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
@@ -114,7 +123,7 @@
                             </div>
 
                             <!-- PAGE 4 -->
-                            <div class="currentpage">
+                            <div class="page4 currentpage">
                               <p class="pagetitle">How can we reach you? Please enter your e-mail adress.</p>
                                 <div class="boxcontent">
                                   <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
@@ -124,7 +133,7 @@
                             </div>
 
                             <!-- PAGE 5 -->
-                            <div class="currentpage">
+                            <div class="page5 currentpage">
                               <p class="pagetitle">We want to make certain we can reach you. Whats your phone number?</p>
                                 <div class="boxcontent">
                                   <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
@@ -134,7 +143,7 @@
                             </div>
 
                             <!-- PAGE 6 -->
-                            <div class="currentpage">
+                            <div class="page6 currentpage">
                               <p class="pagetitle">And lastly.. what are you good at?</p>
                                 <div class="boxcontent">
                                   <select type="text" name="occupation" class="input-medium" value="<c:out value="${param.occupation}" />">

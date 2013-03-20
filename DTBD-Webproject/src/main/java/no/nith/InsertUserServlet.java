@@ -20,15 +20,16 @@ public class InsertUserServlet extends HttpServlet {
 		String[] email = req.getParameterValues("email");
 		String[] phoneNumber = req.getParameterValues("phoneNumber");
 		String[] occupation = req.getParameterValues("occupation");
+		String groupName = req.getParameter("groupName");
 		
 		try{
 			for(int i = 0; i < fullName.length; i++){
 				if(fullName[i] != null && !fullName[i].isEmpty() )
-					new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i]);	
+					new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i], groupName);	
 			}
 			resp.sendRedirect("/hello");
 		}catch(SQLException e){
-			//System.out.println(e.getMessage());
+			System.out.println(e.getMessage());
 			resp.sendRedirect("/asdlkjsadlkj");
 		}
 	}

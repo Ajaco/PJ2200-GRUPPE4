@@ -37,8 +37,9 @@ public class UserDAO {
 				String email = result.getString("email");
 				String phoneNumber = result.getString("phoneNr");
 				String occupation = result.getString("occupation");
+				String groupName = result.getString("groupName");
 				
-				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation));
+				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation, groupName));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -47,7 +48,18 @@ public class UserDAO {
 		return users;
 	}
 	
-	public List<User> getUser(String query) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public List<User> getUser(String query) throws SQLException {
 		
 		List<User> users = new ArrayList<User>();
 		
@@ -64,7 +76,7 @@ public class UserDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "SELECT * FROM users WHERE fullName LIKE ? ORDER BY fullName;";
+			String sql = "SELECT * FROM users WHERE groupName like ?;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, query);
 			
@@ -77,8 +89,9 @@ public class UserDAO {
 				String email = result.getString("email");
 				String phoneNumber = result.getString("phoneNr");
 				String occupation = result.getString("occupation");
+				String groupName = result.getString("groupName");
 				
-				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation));
+				users.add(new User(fullName, dateOfBirth, sex, email, phoneNumber, occupation, groupName));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -87,7 +100,16 @@ public class UserDAO {
 		return users;
 	}
 	
-	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) throws SQLException {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation, String groupName) throws SQLException {
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
@@ -99,7 +121,7 @@ public class UserDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "INSERT INTO users (fullName, dateOfBirth, sex, email, PhoneNr, occupation) VALUES (?, ?, ?, ?, ?, ?);";
+			String sql = "INSERT INTO users (fullName, dateOfBirth, sex, email, PhoneNr, occupation, groupName) VALUES (?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, fullName);
 			statement.setString(2, dateOfBirth);
@@ -107,6 +129,7 @@ public class UserDAO {
 			statement.setString(4, email);
 			statement.setString(5, phoneNumber);
 			statement.setString(6, occupation);
+			statement.setString(7, groupName);
 			
 			statement.executeUpdate();
 	}

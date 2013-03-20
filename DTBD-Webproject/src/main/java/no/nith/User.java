@@ -8,19 +8,28 @@ public class User {
 	private String email;
 	private String phoneNumber;
 	private String occupation;
+	private String groupName;
 	
 	public User() {
 	}
 	
-	public User(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) {
+	public User(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation, String groupName) {
 		this.setName(fullName);
 		this.setDateOfBirth(dateOfBirth);
 		this.setSex(sex);
 		this.setEmail(email);
 		this.setPhoneNumber(phoneNumber);
 		this.setOccupation(occupation);
+		this.setGroupName(groupName);
 	}
 
+	public String getGroupName(){
+		return groupName;
+	}
+	
+	public void setGroupName(String groupName){
+		this.groupName = groupName;
+	}
 	public String getName() {
 		return fullName;
 	}

@@ -15,7 +15,7 @@ public class ApplyServlet extends HttpServlet {
 			throws IOException, ServletException {
 		
 		// Serverer JSP-siden responsen vi har klargjort
-		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/apply.jsp");
+		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/register.jsp");
 		view.forward(req, resp);
 	}
 }

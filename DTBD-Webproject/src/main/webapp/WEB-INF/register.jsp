@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
   <title>Dare to be Digital - Register</title>
@@ -28,7 +29,13 @@
 
 
   <div class="content">
-    <h1>Register</h1>
+  <form action="/register">
+    <div class="registerwrap">
+      <p class="groupname">Group name</p>
+      <input type="text" name="groupName" class="input-groupname" value="<c:out value="${param.groupName}" />">
+      <button type="submit" action="/register"><img src="img/register.png"></button>
+    </div>
+  </form>
   </div> <!-- Content -->
 <div class="footer"></div>
 </div><!-- Container-->
