@@ -14,17 +14,20 @@ public class UserSearchServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException, ServletException {
-		String query = req.getParameter("q");
+		String culomn = req.getParameter("c");
+		String value = req.getParameter("v");
 		
 		List<User> user;
 		try{
-			if (query != null && query.length() > 0) {
+			/*if (query != null && query.length() > 0) {
 				user = new UserDAO().getUser(query);
 			} else {
 				user = new UserDAO().getUser(); // just fetch everything
-			}
+			}*/
 			
-			// Gir JSP-siden tilgang til lista over bøker
+			user = new UserDAO().getUser(culomn, value);
+			System.out.println("asdasdasd" + user.size());
+			// Gir JSP-siden tilgang til lista over brukere
 			req.setAttribute("user", user);
 			
 			// Serverer JSP-siden responsen vi har klargjort

@@ -10,7 +10,7 @@ import java.util.List;
 
 public class UserDAO {
 	
-	public List<User> getUser() {
+	public List<User> getUser(String culomn, String value) throws SQLException{
 
 		List<User> users = new ArrayList<User>();
 		
@@ -25,9 +25,24 @@ public class UserDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "SELECT * FROM users;";
+			String sql = "";
+			if(culomn.equals("fullName"))
+				sql = "SELECT * FROM users WHERE fullName like ?;";
+			else if (culomn.equals("dateOfBirth"))
+				sql = "SELECT * FROM users WHERE dateOfBirth like ?;";
+			else if (culomn.equals("sex"))
+				sql = "SELECT * FROM users WHERE sex like ?;";
+			else if (culomn.equals("email"))
+				sql = "SELECT * FROM users WHERE email like ?;";
+			else if (culomn.equals("phoneNr"))
+				sql = "SELECT * FROM users WHERE occupation like ?;";
+			else if (culomn.equals("occupation"))
+				sql = "SELECT * FROM users WHERE occupation like ?;";
+			else if (culomn.equals("groupName"))
+				sql = "SELECT * FROM users WHERE groupName like ?;";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
+			statement.setString(1, value);
+			System.out.println(statement.toString());
 			ResultSet result = statement.executeQuery();
 			
 			while (result.next()) {

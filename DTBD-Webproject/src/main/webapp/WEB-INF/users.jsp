@@ -15,8 +15,16 @@
 
 	<!-- Søkeskjema -->
 	<form class="form-search">
-	<input type="text" name="q" class="input-medium search-query"
-			value="<c:out value="${param.q}" />">
+	    <select type="text" name="c" class="input-occu" value="<c:out value="${param.c}" />">
+	      <option value = "fullName">Full Name</option>
+	      <option value = "dateOfBirth">Date of Birth</option>
+	      <option value = "sex">Gender</option>
+	      <option value = "email">E-mail adress</option>
+	      <option value = "phoneNr">Phone Number</option>
+	      <option value = "occupation">Field of expertise</option>
+	      <option value = "groupName">Group Name</option>
+	    </select>
+		<input type="text" name="v" class="input-medium search-query" value="<c:out value="${param.v}" />">
 		<button type="submit" class="btn">Søk</button>
 	</form>
 
@@ -30,6 +38,7 @@
 				<th>Email</th>
 				<th>Phone Nr</th>
 				<th>Occupation</th>
+				<th>Group Name</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -41,6 +50,8 @@
 				<td><c:out value="${User.email}" /></td>
 				<td><c:out value="${User.phoneNumber}" /></td>
 				<td><c:out value="${User.occupation}" /></td>
+				<td><c:out value="${User.groupName}" /></td>
+				<td><button type="submit" action="/hello" class="groupsubmit">Edit "${User.name}"</button></td>
 			</tr>
 		</c:forEach>
 		</tbody>
