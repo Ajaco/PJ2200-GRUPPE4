@@ -24,9 +24,12 @@ public class UserSearchServlet extends HttpServlet {
 			} else {
 				user = new UserDAO().getUser(); // just fetch everything
 			}*/
-			
-			user = new UserDAO().getUser(culomn, value);
-			System.out.println("asdasdasd" + user.size());
+			if(value != null && value.length() > 0){
+				user = new UserDAO().getUser(culomn, value);
+				System.out.println("asdasdasd" + user.size());
+			}else{
+				user = new UserDAO().getUser();
+			}
 			// Gir JSP-siden tilgang til lista over brukere
 			req.setAttribute("user", user);
 			

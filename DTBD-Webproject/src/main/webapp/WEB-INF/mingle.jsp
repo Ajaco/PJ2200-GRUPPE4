@@ -31,7 +31,7 @@
 
     <ul class="registermenu">
       <li><a href="#page0"><img src="img/registergroup.png" onmouseover="this.src='img/registergrouphover.png'" onmouseout="this.src='img/registergroup.png'" /></a>
-      <li><a href="/apply"><img src="img/alreadyregistered.png" onmouseover="this.src='img/alreadyregisteredhover.png'" onmouseout="this.src='img/alreadyregistered.png'" /></a>
+      <li><a href="/search"><img src="img/alreadyregistered.png" onmouseover="this.src='img/alreadyregisteredhover.png'" onmouseout="this.src='img/alreadyregistered.png'" /></a>
       <li><a href="#page1"><img src="img/registersolo.png" onmouseover="this.src='img/registersolohover.png'" onmouseout="this.src='img/registersolo.png'" /></a>
     </ul>
 
@@ -167,6 +167,13 @@
         </div><!-- PAGE 0 -->
       </div><!-- PAGES --> 
     </div><!-- PAGES WRAPPER -->
+
+    <ul class="registermenubottom">
+      <li><a href="#page0"><img src="img/registergroup.png" onmouseover="this.src='img/registergrouphover.png'" onmouseout="this.src='img/registergroup.png'" /></a>
+      <li><a href="/search"><img src="img/alreadyregistered.png" onmouseover="this.src='img/alreadyregisteredhover.png'" onmouseout="this.src='img/alreadyregistered.png'" /></a>
+      <li><a href="#page1"><img src="img/registersolo.png" onmouseover="this.src='img/registersolohover.png'" onmouseout="this.src='img/registersolo.png'" /></a>
+    </ul>
+
   </div>
 
 

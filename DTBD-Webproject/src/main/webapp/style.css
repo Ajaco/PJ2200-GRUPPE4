@@ -7,6 +7,10 @@
 	vertical-align: baseline;
 	line-height: 1;
 }
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
 
 body, html{ 
 margin:0; 
@@ -306,6 +310,11 @@ height:350px;
 	margin-bottom:20px;
 }
 
+.registermenubottom{
+	margin:3px;
+	margin-top:30px;
+}
+
 .disclaimer{
 position:relative;
 margin-top:5px;
@@ -338,7 +347,9 @@ font-weight: bold;
 	margin-top:20px;
 	margin-left:20px;	
 }
-.page0{background-image:url(img/page0bg.png);} .page1{} .page2{} .page3{} .page4{} .page5{} .page6{}
+.page0{background-image:url(img/page0bg.png);} .page1{background-image: url(img/page1bg.png)} .page2{background-image: url(img/page2bg.png)} 
+.page3{background-image: url(img/page3bg.png)} .page4{background-image: url(img/page4bg.png)} .page5{background-image: url(img/page5bg.png)}
+.page6{background-image: url(img/page6bg.png)}
 
 
 .pagetitle{
@@ -365,7 +376,8 @@ font-weight: bold;
 	font-size:15pt;
 	margin-top:30px;
 	text-align: center;
-	margin-left:25%
+	margin-left:25%;
+	border:solid 1px #333;
 }
 
 
@@ -480,11 +492,10 @@ font-size:7pt;
 }
 
 .groupsubmit{
-	width:199px;
-	height:36px;
 	margin: 0 auto;
 	display: block;
 	margin-top:60px;
+
 }
 
 .registerwrap{

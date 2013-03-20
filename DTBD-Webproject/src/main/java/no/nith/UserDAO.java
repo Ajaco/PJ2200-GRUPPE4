@@ -10,6 +10,13 @@ import java.util.List;
 
 public class UserDAO {
 	
+	public List<User> getUser() throws SQLException{
+
+		List<User> users = new ArrayList<User>();	
+		return users;
+	}
+	
+	
 	public List<User> getUser(String culomn, String value) throws SQLException{
 
 		List<User> users = new ArrayList<User>();
@@ -25,7 +32,7 @@ public class UserDAO {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
-			String sql = "";
+			String sql;
 			if(culomn.equals("fullName"))
 				sql = "SELECT * FROM users WHERE fullName like ?;";
 			else if (culomn.equals("dateOfBirth"))
@@ -38,11 +45,10 @@ public class UserDAO {
 				sql = "SELECT * FROM users WHERE occupation like ?;";
 			else if (culomn.equals("occupation"))
 				sql = "SELECT * FROM users WHERE occupation like ?;";
-			else if (culomn.equals("groupName"))
+			else
 				sql = "SELECT * FROM users WHERE groupName like ?;";
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, value);
-			System.out.println(statement.toString());
 			ResultSet result = statement.executeQuery();
 			
 			while (result.next()) {

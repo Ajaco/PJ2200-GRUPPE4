@@ -1,20 +1,35 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/sorttable.js"></script>
+  <title>Dare to be Digital - Index</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
 
-	<div class="container"></div>
-	<div class="page-header">
-		<h1>Users</h1>
-	</div>
+<div id="container">
+<div class="frostytop"></div>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="headerbg"></div>
+      <div class="logomenuwrap">
+        <a href="/hello"><div class="logo"></div></a>
+        <ul class="menu">
+            <li><a href="hello">\\ home<a></li>
+            <li><a href="/mingle">\\ find co-workers</a></li>
+            <li><a href="/apply">\\ apply</a></li>
+            <li><a href="/contest">\\ the contest</a></li>
+            <li><a href="/news">\\ news</a></li>
+            <li><a href="/contact">\\ contact</a></li>
+            <li><a href="/about">\\ about</a></li>
+        </ul>
+      </div>
+  </div>
 
-	<!-- Søkeskjema -->
-	<form class="form-search">
+
+  <div class="content">
+<form class="form-search">
 	    <select type="text" name="c" class="input-occu" value="<c:out value="${param.c}" />">
 	      <option value = "fullName">Full Name</option>
 	      <option value = "dateOfBirth">Date of Birth</option>
@@ -27,8 +42,6 @@
 		<input type="text" name="v" class="input-medium search-query" value="<c:out value="${param.v}" />">
 		<button type="submit" class="btn">Søk</button>
 	</form>
-
-	<!-- Resultater -->
 	<table class="sortable">
 		<thead>
 			<tr>
@@ -51,11 +64,14 @@
 				<td><c:out value="${User.phoneNumber}" /></td>
 				<td><c:out value="${User.occupation}" /></td>
 				<td><c:out value="${User.groupName}" /></td>
-				<td><button type="submit" action="/hello" class="groupsubmit">Edit "${User.name}"</button></td>
+				<td><button type="submit" onClick="location.href='/edituser'" class="groupsubmit">Edit "${User.name}"</button></td>
 			</tr>
 		</c:forEach>
 		</tbody>
 	</table>
 
+  </div> <!-- Content -->
+<div class="footer"></div>
+</div><!-- Container-->
 </body>
 </html>

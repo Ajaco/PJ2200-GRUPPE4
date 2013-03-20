@@ -93,19 +93,13 @@
   
   
   
-  
-  
-  
-  
-  
-  
   	<servlet>
-  	<servlet-name>UserSearchServlet</servlet-name>
+  	<servlet-name>usersearchservlet</servlet-name>
   	<servlet-class>no.nith.UserSearchServlet</servlet-class>
   	</servlet>
   
   	<servlet-mapping>
-  	<servlet-name>UserSearchServlet</servlet-name>
+  	<servlet-name>usersearchservlet</servlet-name>
   	<url-pattern>/search</url-pattern>
   	</servlet-mapping>
   	
