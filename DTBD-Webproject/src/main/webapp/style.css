@@ -122,9 +122,8 @@ margin-top:5px;
 margin-bottom:0px;
 width:519px;
 height:auto;
-background-color:67ABE6;
+background-color:#b7d8f6;
 border: solid 1px #333;
-outline: solid 1px 67ABE6;
 overflow: hidden;
 }
 
@@ -258,7 +257,7 @@ margin-top:5px;
 margin-bottom:0px;
 width:100%;
 height:auto;
-background-color:#b7d8f6;
+background-color:#cce0f9;
 border: solid 1px #333;
 }
 .aboutingresstext{
@@ -340,22 +339,33 @@ font-weight: bold;
 	margin-left:20px;
 }
 
-.currentpage .boxcontent{
-	margin:20px;
-	height:auto;
-	overflow: hidden;
-}
+
 .pagetitle{
 	margin:20px;
+	margin-top:60px;
+	color:white;
+	font-size:15pt;
+	text-align: center;
 }
 
 #horizontalwrapper{
 	left:0;
-	width:6650px;
+	width:9000px;
 	position:absolute;
 	-webkit-transition:left 0.3s;
 	-moz-transition:left 0.3s;
 }
+
+.input-medium{
+	width:500px;
+	height:40px;
+	font-family:"Verdana", sans-serif;
+	font-size:15pt;
+	margin-top:30px;
+	text-align: center;
+	margin-left:25%
+}
+
 
 #page0:target #horizontalwrapper{
 	left:0px;
@@ -380,9 +390,11 @@ font-weight: bold;
 	left:-5700px;
 }
 
+
 .next{
 position: relative;
 float: right;
-margin-right:20px;
-margin-top:380px;
+margin-right:40px;
+margin-top:200px;
+color:white;
 }

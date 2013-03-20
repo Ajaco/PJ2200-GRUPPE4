@@ -41,22 +41,6 @@
       NOTE: BY REGISTERING YOUR USER HERE, YOU DO NOT REGISTER FOR THE TOURNAMENT ITSELF.</br> THIS FEATURE IS ONLY USED FOR FINDING A GROUP, OR MEMBERS FOR YOUR GROUP. </br>IN ORDER TO APPLY TO THE TOURNAMENT WITH A FULL GROUP - PLEASE VISIT THE APPLY PAGE
       </p>
     </div>
-<form class="form" id"=inputform" action="/insert">
-  <c:forEach var="i" begin="1" end="2">
-    <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
-    <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
-    <input type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
-    <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
-    <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
-    <select type="text" name="occupation" class="input-medium" value="<c:out value="${param.occupation}" />">
-    <option value = "Developer">Developer</option>
-    <option value = "3D Artist">3D Artist</option>
-    <option value = "Graphic Designer">Graphic Designer</option>
-    <option value = "Audio">Audio</option>
-    </select>
-  </c:forEach>
-<button type="submit">Insert user</button>
-</form>
 
     <div id="pageswrapper">
       <div id="pages">
@@ -70,74 +54,97 @@
 
                         <div id="horizontalwrapper">
 
-                          <form class="form" id="inputform" action="/insert">
+                          <form action="/insert">
                             <!-- PAGE 0 //GROUP REGISTRY-->
                             <div class="currentpage">
                               <p class="pagetitle">Page 0</p>
                                 <div class="boxcontent">
-                                  GROUP REGISTRY
+                                  <div class="formwrapper">
+                                      <c:forEach var="i" begin="1" end="6">
+                                        <input type="text" name="fullName" class="input-group" value="<c:out value="${param.fullName}" />">
+                                        <input type="text" name="dateOfBirth" class="input-group" value="<c:out value="${param.dateOfBirth}" />">
+                                        <select type="text" name="sex" class="input-group" value="<c:out value="${param.sex}" />">
+                                          <option value = "M">Male</option>
+                                          <option value = "F">Female</option>
+                                        </select>
+                                        <input type="text" name="email" class="input-group" value="<c:out value="${param.email}" />">
+                                        <input type="text" name="phoneNumber" class="input-group" value="<c:out value="${param.phoneNumber}" />">
+                                        <select type="text" name="occupation" class="input-group" value="<c:out value="${param.occupation}" />">
+                                          <option value = "Developer">Developer</option>
+                                          <option value = "3D Artist">3D Artist</option>
+                                          <option value = "Graphic Designer">Graphic Designer</option>
+                                          <option value = "Audio">Audio</option>
+                                        </select>
+                                      </c:forEach>
+                                      <button type="submit">Insert user</button>
+                                    
+                                  </div>
                                 </div>
                                 <a class="next" href="#page0">SUBMIT</a>
                             </div>
 
                             <!-- PAGE 1 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 1</p>
-                                <div class="boxcontent">
+                              <p class="pagetitle">Hello! Thank you for registrating. To start things off; What's your name?</p>
+                                <div class="boxcontent"> 
                                   <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
+                                  <a class="next" href="#page2">Next</a>
                                 </div>
-                                <a class="next" href="#page2">Next</a>
                             </div>
 
                             <!-- PAGE 2 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 2</p>
+                              <p class="pagetitle">Next off.. we need to know when you are born. Format: yyyy.mm.dd</p>
                                 <div class="boxcontent">
                                   <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
+                                  <a class="next" href="#page3">Next</a>                                
                                 </div>
-                                <a class="next" href="#page3">Next</a>
                             </div>
 
                             <!-- PAGE 3 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 3</p>
+                              <p class="pagetitle">This is a tricky one; what's your gender?</p>
                                 <div class="boxcontent">
-                                  <input type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
-                                </div>
-                                <a class="next" href="#page4">Next</a>
+                                  <select type="text" name="sex" class="input-medium" value="<c:out value="${param.sex}" />">
+                                  <option value = "M">Male</option>
+                                  <option value = "F">Female</option>
+                                  </select>
+                                  <a class="next" href="#page4">Next</a>
+                                </div>   
                             </div>
 
                             <!-- PAGE 4 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 4</p>
+                              <p class="pagetitle">How can we reach you? Please enter your e-mail adress.</p>
                                 <div class="boxcontent">
                                   <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
+                                  <a class="next" href="#page5">Next</a>
                                 </div>
-                                <a class="next" href="#page5">Next</a>
+                                
                             </div>
 
                             <!-- PAGE 5 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 5</p>
+                              <p class="pagetitle">We want to make certain we can reach you. Whats your phone number?</p>
                                 <div class="boxcontent">
                                   <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
+                                  <a class="next" href="#page6">Next</a>
                                 </div>
-                                <a class="next" href="#page6">Next</a>
+                                
                             </div>
 
                             <!-- PAGE 6 -->
                             <div class="currentpage">
-                              <p class="pagetitle">Page 6</p>
+                              <p class="pagetitle">And lastly.. what are you good at?</p>
                                 <div class="boxcontent">
                                   <select type="text" name="occupation" class="input-medium" value="<c:out value="${param.occupation}" />">
-                                  <option value = "Developer">Developer</option>
-                                  <option value = "3D Artist">3D Artist</option>
-                                  <option value = "Graphic Designer">Graphic Designer</option>
+                                  <option value = "Developer">Developing</option>
+                                  <option value = "3D Artist">3D</option>
+                                  <option value = "Graphic Designer">Graphic Design</option>
                                   <option value = "Audio">Audio</option>
                                   </select>
                                   <button type="submit" action="/insert">Insert user</button>
                                 </div>
-                                  
                             </div>
                           </form>
 
