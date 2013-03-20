@@ -116,15 +116,17 @@ margin-top:5px;
 margin-bottom:0px;
 width:519px;
 height:auto;
-background-color:#333;
-border: solid 1px #dfe1e4;
-outline: solid 1px #333;
+background-color:67ABE6;
+border: solid 1px #333;
+outline: solid 1px 67ABE6;
+overflow: hidden;
 }
 
 .whatistext{
-color:white;
+color:#333;
 margin:10px;
 text-align: left;
+font-weight: bold;
 }
 
 .applyheader{
