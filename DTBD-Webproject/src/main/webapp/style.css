@@ -442,6 +442,13 @@ font-size:7pt;
 margin-left:67px;
 font-size:7pt;
 }
+.liedituser{
+margin-left:67px;
+font-size:7pt;
+}
+.ligrpname{
+font-size:7pt;
+}
 .input-group{
 	width:136px;
 	height:20px;
@@ -501,7 +508,155 @@ font-size:7pt;
 .registerwrap{
 	background-color:#333;
 }
+.searchheader{
+margin-top:20px;
+position:relative;
+background-image: url(img/searchheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
 
+.searchinputwrap{
+position:relative;
+margin-top:20px;
+margin-bottom:0px;
+width:948px;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+	font-family:"Verdana", sans-serif;
+	font-size:12pt;
+}
+
+.searchdrop{
+	position: relative;
+	margin:0;
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:200px;
+	height:36px;
+}
+
+.searchinput{
+	position: relative;
+	margin:0;
+	margin-left:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:477px;
+	height:36px;
+	text-align: center;
+}
+.searchbtn{
+	float:right;
+	margin-right:20px;
+	position: relative;
+	margin-top:20px;
+}
+
+.resultsheader{
+margin-top:80px;
+margin-bottom:20px;
+position:relative;
+background-image: url(img/searchresultsheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+
+.resultstbl{
+font-family:"Verdana", sans-serif;
+font-size:13px;
+color:white;
+}
+.resulttitles{
+font-size:10pt;
+
+}
+
+.edituser{
+	background-color: white;
+	padding:3px;
+	border: solid 1px black;
+	outline: solid 1px white;
+}
+
+.resultswrap{
+position:relative;
+margin-top:20px;
+margin-bottom:0px;
+width:948px;
+min-height: 400px;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+font-family:"Verdana", sans-serif;
+font-size:12pt;
+
+}
+.resultstitles{
+	margin-left:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+	display: table;
+	width:950px;
+	font-family:"Verdana", sans-serif;
+	color:#b7d8f6;
+}
+
+.results{
+	margin-left:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+	display: table;
+	width:950px;
+	font-family:"Verdana", sans-serif;
+	color:white;
+}
+.linameres{
+position: absolute;
+left:20px;
+margin-left:0px;
+font-size:7pt;
+}
+.lidobres{
+position: absolute;
+left:180px;	
+font-size:7pt;
+}
+.ligenderres{
+position: absolute;
+left:280px;
+font-size:7pt;	
+}
+.limailres{
+position: absolute;
+left:330px;
+font-size:7pt;	
+}
+.liphoneres{
+position: absolute;
+left:475px;
+font-size:7pt;	
+}
+.lioccures{
+position: absolute;
+left:580px;
+font-size:7pt;
+}
+
+.ligrpnameres{
+position: absolute;
+left:680px;	
+font-size:7pt;
+}
+.liedituserres{
+position: absolute;
+left:860px;
+font-size:7pt;
+}
 
 .next{
 position: relative;

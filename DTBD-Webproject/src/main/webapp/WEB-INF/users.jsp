@@ -29,46 +29,50 @@
 
 
   <div class="content">
-<form class="form-search">
-	    <select type="text" name="c" class="input-occu" value="<c:out value="${param.c}" />">
-	      <option value = "fullName">Full Name</option>
-	      <option value = "dateOfBirth">Date of Birth</option>
-	      <option value = "sex">Gender</option>
-	      <option value = "email">E-mail adress</option>
-	      <option value = "phoneNr">Phone Number</option>
-	      <option value = "occupation">Field of expertise</option>
-	      <option value = "groupName">Group Name</option>
-	    </select>
-		<input type="text" name="v" class="input-medium search-query" value="<c:out value="${param.v}" />">
-		<button type="submit" class="btn">Søk</button>
-	</form>
-	<table class="sortable">
-		<thead>
-			<tr>
-				<th>Navn</th>
-				<th>Date of Birth</th>
-				<th>Sex</th>
-				<th>Email</th>
-				<th>Phone Nr</th>
-				<th>Occupation</th>
-				<th>Group Name</th>
-			</tr>
-		</thead>
-		<tbody>
-		<c:forEach var="User" items="${user}">
-			<tr>
-				<td><c:out value="${User.name}" /></td>
-				<td><c:out value="${User.dateOfBirth}" /></td>
-				<td><c:out value="${User.sex}" /></td>
-				<td><c:out value="${User.email}" /></td>
-				<td><c:out value="${User.phoneNumber}" /></td>
-				<td><c:out value="${User.occupation}" /></td>
-				<td><c:out value="${User.groupName}" /></td>
-				<td><button type="submit" onClick="location.href='/edituser'" class="groupsubmit">Edit "${User.name}"</button></td>
-			</tr>
-		</c:forEach>
-		</tbody>
-	</table>
+ <div class="searchheader"></div>
+ 	<div class="searchinputwrap">
+      	<form class="form-search">
+		    <select type="text" name="c" class="searchdrop" value="<c:out value="${param.c}" />">
+		      <option value = "fullName">Full Name</option>
+		      <option value = "dateOfBirth">Date of Birth</option>
+		      <option value = "sex">Gender</option>
+		      <option value = "email">E-mail adress</option>
+		      <option value = "phoneNr">Phone Number</option>
+		      <option value = "occupation">Field of expertise</option>
+		      <option value = "groupName">Group Name</option>
+		    </select>
+			<input type="text" name="v" class="searchinput" value="<c:out value="${param.v}" />">
+			<button type="submit" class="searchbtn" ><img src="img/search.png"></button>
+		</form>
+	</div>
+
+	<div class="resultsheader"></div>
+	<div class="resultswrap">
+		<table class="resultstbl">
+			<ul class="resultstitles">
+	          <li class="linameres">Name</li>
+	          <li class="lidobres">Date of Birth </br>[yyyy.mm.dd]</li>
+	          <li class="ligenderres">Gender</li>
+	          <li class="limailres">Email adress</li>
+	          <li class="liphoneres">Phone Number</li>
+	          <li class="lioccures">Field of expertise</li>
+	          <li class="ligrpnameres">Group name</li>
+            </ul>
+			<c:forEach var="User" items="${user}">
+				<ul class="results">
+					<li class="linameres"><c:out value="${User.name}" /></li>
+					<li class="lidobres"><c:out value="${User.dateOfBirth}" /></li>
+					<li class="ligenderres"><c:out value="${User.sex}" /></li>
+					<li class="limailres"><a href="mailto:${User.email}" target="_"><c:out value="${User.email}" /></a></li>
+					<li class="liphoneres"><c:out value="${User.phoneNumber}" /></li>
+					<li class="lioccures"><c:out value="${User.occupation}" /></li>
+					<li class="ligrpnameres"><c:out value="${User.groupName}" /></li>
+					<li class="liedituserres"><a href="/edituser">Edit this user</a></li>
+				</ul>
+			</c:forEach>
+			</tbody>
+		</table>
+	</div>
 
   </div> <!-- Content -->
 <div class="footer"></div>

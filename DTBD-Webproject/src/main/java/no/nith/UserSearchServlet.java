@@ -26,7 +26,6 @@ public class UserSearchServlet extends HttpServlet {
 			}*/
 			if(value != null && value.length() > 0){
 				user = new UserDAO().getUser(culomn, value);
-				System.out.println("asdasdasd" + user.size());
 			}else{
 				user = new UserDAO().getUser();
 			}
