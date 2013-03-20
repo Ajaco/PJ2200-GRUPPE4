@@ -86,8 +86,8 @@ public class UserDAO {
 		
 		return users;
 	}
-
-	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) {
+	
+	public void insertUser(String fullName, String dateOfBirth, String sex, String email, String phoneNumber, String occupation) throws SQLException {
 		
 		// Benytter oss av JDBC-driveren (dekket i forelesning 1)
 		// Kobler oss til databasen library på egen maskin.
@@ -96,13 +96,11 @@ public class UserDAO {
 		String username = "root";	 
 		String password = "1234"; 
 		
-		try {
 			Connection connection =
 					DriverManager.getConnection(url, username, password);
 			
 			String sql = "INSERT INTO users (fullName, dateOfBirth, sex, email, PhoneNr, occupation) VALUES (?, ?, ?, ?, ?, ?);";
 			PreparedStatement statement = connection.prepareStatement(sql);
-			
 			statement.setString(1, fullName);
 			statement.setString(2, dateOfBirth);
 			statement.setString(3, sex);
@@ -111,10 +109,5 @@ public class UserDAO {
 			statement.setString(6, occupation);
 			
 			statement.executeUpdate();
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		
 	}
 }

@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Dare to be Digital - Contact</title>
+  <title>Dare to be Digital - Register</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -28,7 +28,7 @@
 
 
   <div class="content">
-    <h1>Contact</h1>
+    <h1>Register</h1>
   </div> <!-- Content -->
 <div class="footer"></div>
 </div><!-- Container-->

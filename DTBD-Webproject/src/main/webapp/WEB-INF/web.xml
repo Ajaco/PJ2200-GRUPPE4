@@ -108,6 +108,30 @@
   	<servlet-name>UserSearchServlet</servlet-name>
   	<url-pattern>/search</url-pattern>
   	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	<servlet>
+  	<servlet-name>applyservlet</servlet-name>
+  	<servlet-class>no.nith.ApplyServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>applyservlet</servlet-name>
+  	<url-pattern>/apply</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	<servlet>
+  	<servlet-name>mingleservlet</servlet-name>
+  	<servlet-class>no.nith.MingleServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>mingleservlet</servlet-name>
+  	<url-pattern>/mingle</url-pattern>
+  	</servlet-mapping>
   
   
   
