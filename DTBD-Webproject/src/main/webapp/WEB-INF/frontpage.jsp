@@ -1,7 +1,8 @@
+<!doctype html>
 <html>
 <head>
   <title>Dare to be Digital - Index</title>
-  <meta charset="utf-8" />
+  <meta charset="ISO-8859-1" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -15,7 +16,7 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
-            <li><a href="hello">\\ home<a></li>
+            <li><a href="hello">\\ home</a></li>
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
@@ -34,7 +35,8 @@
     <div class="whatisheader"></div>
     <div class="whatis">
       <p class="whatistext">
-        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.
+        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. </br></br>
+        Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. </br></br>The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.
       </p>
     </div>
 
@@ -54,17 +56,21 @@
       <div class="spotlightheader"></div>
       <div class="spotlight">
         <p class="spotlighttext">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec purus neque, id interdum nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pulvinar euismod ligula, non porttitor lorem porttitor a. Nam nec dolor sem, a ullamcorper magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla nunc nec libero cursus aliquet. Proin pharetra tempus erat at scelerisque. Cras pellentesque leo id augue placerat iaculis vestibulum justo cursus. Praesent dapibus quam non augue pharetra in pellentesque orci semper.
+        The Nordic Selection Event for DTBD is a selection held at NITH in Oslo, Norway, where teams from all over the Nordic region competes for a spot in Scotland. </br></br>
+        This is the website for the Nordic selection event for the international games development competition Dare to be Digital. The best Nordic team get to go to Scotland for the summer and set their game idea into life!
         </p>
       </div>
+      <a href="/about"><div class="nordicreadmore"><p class="readmoretext">Want to read more? Click here.<p></div></a>
     </div>
 
 
 
-      <!-- NEWS -->
+      <!-- NEWS -->    
     <div class="newsheader"></div>
-    <div class="news">
-      <p class="newstext">
+    <div class="nithnordic"></div>
+
+    <div class="about">
+      <p class="abouttext">
         <img class="newspic" src="img/logo.png" alt="newspic">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec purus neque, id interdum nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pulvinar euismod ligula, non porttitor lorem porttitor a. Nam nec dolor sem, a ullamcorper magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla nunc nec libero cursus aliquet. Proin pharetra tempus erat at scelerisque. Cras pellentesque leo id augue placerat iaculis vestibulum justo cursus. Praesent dapibus quam non augue pharetra in pellentesque orci semper.</br></br>
 

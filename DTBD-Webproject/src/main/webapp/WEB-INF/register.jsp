@@ -37,7 +37,7 @@
     </p>
   </div>
   <form action="/register">
-    <div class="news">
+    <div class="about">
       <p class="registertitle">Group name</p>
         <input type="text" name="groupName" class="input-groupname" value="<c:out value="${param.groupName}" />">
         <button type="submit" class="registersubmit"><img src="img/register.png"></button>

@@ -7,6 +7,10 @@
 	vertical-align: baseline;
 	line-height: 1;
 }
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
 
 body, html{ 
 margin:0; 
@@ -121,7 +125,7 @@ position:relative;
 margin-top:5px;
 margin-bottom:0px;
 width:519px;
-height:auto;
+height:162px;
 background-color:#b7d8f6;
 border: solid 1px #333;
 overflow: hidden;
@@ -131,7 +135,6 @@ overflow: hidden;
 color:#333;
 margin:10px;
 text-align: left;
-font-weight: bold;
 }
 
 .applyheader{
@@ -147,7 +150,7 @@ width:521px;
 position: relative;
 margin-top:5px;
 background-image:url(img/applybg.png);
-width:521px;
+width:950px;
 height:87px;
 }
 
@@ -192,42 +195,66 @@ position:relative;
 margin-top:5px;
 margin-bottom:0px;
 width:403px;
-height:268px;
-background-color:#333;
+height:auto;
+background-color:#b7d8f6;
 border: solid 1px #dfe1e4;
 outline: solid 1px #333;
 overflow: hidden;
 }
 
+.nordicreadmore{
+	width:403px;
+	height:30px;
+	margin-top:5px;
+	background-color:#b7d8f6;
+	border: solid 1px #dfe1e4;
+	outline: solid 1px #333;
+	background-repeat: no-repeat;
+
+
+
+}
+
 .spotlighttext{
-color:white;
+color:#333;
 margin:10px;
 text-align: left;
 }
 
+.readmoretext{
+font-family:"Verdana", sans-serif;
+color:#333;
+font-size: 10pt;
+margin-top:8px;
+text-align: center;
+}
+
+.nithnordic{
+margin-top:5px;
+position:relative;
+background-image: url(img/nordicbanner.png);
+height:150px;
+width:950px;
+}
 .newsheader{
-margin-top:50px;
+margin-top:80px;
 position:relative;
 background-image: url(img/newsheader.png);
 background-repeat:no-repeat;
 height:33px;
-width:100%;
+width:950px;
 }
 
-.news{
-position:relative;
-margin-top:5px;
-margin-bottom:0px;
-width:948px;
-background-color:#333;
-border: solid 1px #dfe1e4;
-outline: solid 1px #333;
-}
 
-.newstext{
-color:white;
+.registertext{
+color:#333;
 margin:10px;
-text-align: left;
+text-align: center;
+font-size:7pt;
+}
+
+.registertext a{
+color:#333;
 }
 
 .newspic{
@@ -241,10 +268,95 @@ margin-bottom:5px;
 /* ABOUT */
 
 /*HEADER PICTURE*/
+.contact{
+position:relative;
+margin-top:20px;
+margin-bottom:0px;
+width:100%;
+height:auto;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+font-family:"Verdana", sans-serif;
+color:white;
+font-size: 10pt;
+height:75px;
+}
+.contacttext{
+color:white;
+margin:10px;
+text-align: left;
+
+}
+.contactframe{
+	float:left;
+	width:213px;
+	height:75px;
+	background-image: url(img/contactframe.png);
+	background-repeat: no-repeat;
+	position:relative;
+	margin-left:10px;
+}
+.contactperson{
+	color:#333;
+	font-family:"Verdana", sans-serif;
+	font-weight: bold;
+	font-size:9pt;
+	margin:8px;
+
+}
 .aboutheader{
 margin-top:20px;
 position:relative;
 background-image: url(img/aboutheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.aboutnordic{
+margin-top:20px;
+position:relative;
+background-image: url(img/aboutnordic.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.history{
+margin-top:20px;
+position:relative;
+background-image: url(img/history.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.contestheader{
+margin-top:20px;
+position:relative;
+background-image: url(img/contestheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.rulesheader{
+margin-top:40px;
+position:relative;
+background-image: url(img/contestrules.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.when{
+margin-top:40px;
+position:relative;
+background-image: url(img/when.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+.contactheader{
+margin-top:20px;
+position:relative;
+background-image: url(img/contact.png);
 background-repeat:no-repeat;
 height:33px;
 width:521px;
@@ -273,12 +385,12 @@ margin-top:5px;
 margin-bottom:0px;
 width:100%;
 height:auto;
-background-color:#333;
+background-color:#b7d8f6;
 border: solid 1px #dfe1e4;
 outline: solid 1px #333;
 }
 .abouttext{
-color:white;
+color:#333;
 margin:10px;
 text-align: left;
 }
@@ -291,19 +403,15 @@ background-image: url(img/readmore.png);
 margin-top:30px;
 }
 
-.footer{
-position: relative;
-background-image: url(img/frostybottom.png);
-background-repeat: repeat-x;
-width:100%;
-height:350px;   
-} 
-
-
 /* FIND A GROUP */
 .registermenu{
 	margin:3px;
 	margin-bottom:20px;
+}
+
+.registermenubottom{
+	margin:3px;
+	margin-top:30px;
 }
 
 .disclaimer{
@@ -320,13 +428,12 @@ outline: solid 1px #333;
 color:black;
 margin:10px;
 text-align: left;
-font-weight: bold;
 }
 
 #pages{
 	width:950px;
 	height:500px;
-	overflow:hiddens;
+	overflow:hidden;
 	position:relative;
 }
 .currentpage{
@@ -336,21 +443,26 @@ font-weight: bold;
 	display:table-cell;
 	position:relative;
 	margin-top:20px;
-	margin-left:20px;
+	margin-left:20px;	
 }
+.page0{background-image:url(img/page0bg.png);} .page1{background-image: url(img/page1bg.png)} .page2{background-image: url(img/page2bg.png)} 
+.page3{background-image: url(img/page3bg.png)} .page4{background-image: url(img/page4bg.png)} .page5{background-image: url(img/page5bg.png)}
+.page6{background-image: url(img/page6bg.png)}
 
 
 .pagetitle{
 	margin:20px;
-	margin-top:60px;
+	margin-top:40px;
+	margin-bottom:15px;
 	color:white;
 	font-size:15pt;
 	text-align: center;
+	height:25pt;
 }
 
 #horizontalwrapper{
 	left:0;
-	width:9000px;
+	width:6650px;
 	position:absolute;
 	-webkit-transition:left 0.3s;
 	-moz-transition:left 0.3s;
@@ -363,9 +475,9 @@ font-weight: bold;
 	font-size:15pt;
 	margin-top:30px;
 	text-align: center;
-	margin-left:25%
+	margin-left:25%;
+	border:solid 1px black;
 }
-
 
 #page0:target #horizontalwrapper{
 	left:0px;
@@ -390,11 +502,409 @@ font-weight: bold;
 	left:-5700px;
 }
 
+.groupinfoul{
+	display: table;
+	width:950px;
+	font-family:"Verdana", sans-serif;
+	color:white;
+}
+.formwrapper{
+	width:804px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	margin-top:50px;
+}
 
-.next{
-position: relative;
-float: right;
-margin-right:40px;
-margin-top:200px;
+.liname{
+margin-left:0px;
+font-size:7pt;
+}
+.lidob{
+margin-left:112px;	
+font-size:7pt;
+}
+.ligender{
+margin-left:6px;
+font-size:7pt;	
+}
+.limail{
+margin-left:38px;
+font-size:7pt;	
+}
+.liphone{
+margin-left:75px;
+font-size:7pt;	
+}
+.lioccu{
+margin-left:67px;
+font-size:7pt;
+}
+.liedituser{
+margin-left:67px;
+font-size:7pt;
+}
+.ligrpname{
+font-size:7pt;
+}
+.input-group{
+	width:136px;
+	height:20px;
+	font-family:"Verdana", sans-serif;
+	font-size:13px;
+	margin-top:10px;
+	text-align: center;
+
+}
+.input-sex{
+	width:70px;
+	height:20px;
+	font-family:"Verdana", sans-serif;
+	font-size:13px;
+	text-align: center;
+}
+.input-occu{
+	width:170px;
+	height:20px;
+	font-family:"Verdana", sans-serif;
+	font-size:13px;
+
+	text-align: center;
+}
+.groupwrap{
+	height:100px;
+	width:804px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.groupname{
+	position:relative;
+	margin-top:30px;
+	margin-bottom:20px;
+	color:white;
+	font-size:15pt;
+	text-align: center;
+}
+.input-groupname{
+	width:550px;
+	height:40px;
+	font-family:"Verdana", sans-serif;
+	font-size:15pt;
+	margin-top:30px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	border: solid black 1px;
+}
+
+.groupsubmit{
+	margin: 0 auto;
+	display: block;
+	margin-top:60px;
+}
+
+.registersubmit{
+	margin: 0 auto;
+	display: block;
+	margin-top:60px;
+	margin-bottom:30px;
+
+}
+
+.registerwrap{
+	background-color:#333;
+	position: relative;
+	height:150px;
+	width:950px;
+
+}
+.registertitle{
+	position:relative;
+	margin-top:20px;
+	margin-bottom:20px;
+	color:#333;
+	font-size:15pt;
+	text-align: center;
+	height:25pt;
+}
+.searchheader{
+position:relative;
+margin-top:20px;
+background-image: url(img/searchheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+
+.searchinputwrap{
+position:relative;
+margin-top:20px;
+margin-bottom:0px;
+width:948px;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+font-family:"Verdana", sans-serif;
+font-size:12pt;
+height:76px;
+}
+
+.searchdrop{
+	position:absolute;
+	left:20px;
+	top:20px;
+	width:200px;
+	height:36px;
+}
+
+.searchinput{
+	position: absolute;
+	margin-left:230px;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:490px;
+	height:36px;
+	text-align: center;
+}
+.searchbtn{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+.resultsheader{
+margin-top:80px;
+margin-bottom:20px;
+position:relative;
+background-image: url(img/searchresultsheader.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+}
+
+.resultstbl{
+font-family:"Verdana", sans-serif;
+font-size:13px;
 color:white;
 }
+.resulttitles{
+font-size:10pt;
+
+}
+
+.edituser{
+	background-color: white;
+	padding:3px;
+	border: solid 1px black;
+	outline: solid 1px white;
+}
+
+.resultswrap{
+position:relative;
+margin-top:20px;
+margin-bottom:0px;
+width:948px;
+min-height: 400px;
+background-color:#333;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+font-family:"Verdana", sans-serif;
+font-size:12pt;
+
+}
+.resultstitles{
+	margin-left:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+	display: table;
+	width:950px;
+	font-family:"Verdana", sans-serif;
+	color:#b7d8f6;
+}
+
+.results{
+	margin-left:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+	display: table;
+	width:950px;
+	font-family:"Verdana", sans-serif;
+	color:white;
+}
+.linameres{
+position: absolute;
+left:20px;
+margin-left:0px;
+font-size:7pt;
+}
+.lidobres{
+position: absolute;
+left:180px;	
+font-size:7pt;
+}
+.ligenderres{
+position: absolute;
+left:280px;
+font-size:7pt;	
+}
+.limailres{
+position: absolute;
+left:330px;
+font-size:7pt;	
+}
+.liphoneres{
+position: absolute;
+left:475px;
+font-size:7pt;	
+}
+.lioccures{
+position: absolute;
+left:580px;
+font-size:7pt;
+}
+
+.ligrpnameres{
+position: absolute;
+left:680px;	
+font-size:7pt;
+}
+.liedituserres{
+position: absolute;
+left:860px;
+font-size:7pt;
+}
+
+.edit-input{
+	width:400px;
+	height:40px;
+	border: solid 1px black;
+}
+
+.changegroupheader{
+margin-top:20px;
+position:relative;
+background-image: url(img/changegroup.png);
+background-repeat:no-repeat;
+height:33px;
+width:521px;
+margin-top:30px;
+margin-bottom:20px;
+}
+
+.editgrouptitles{
+	display: table;
+	width:800px;
+	font-family:"Verdana", sans-serif;
+	color:white;
+	margin-bottom:20px;
+}
+
+.editmail{
+font-size:15pt;
+}
+
+.editgroup{
+	position: absolute;
+	right:0;
+	font-size:15pt;
+}
+
+.editsubmit{
+	margin: 0 auto;
+	display: block;
+	margin-top:60px;
+	margin-bottom:20px;
+
+}
+
+.successdisclaimer{
+position:relative;
+margin-top:5px;
+margin-bottom:300px;
+width:948px;
+background-color:#54D68C;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+}
+
+.successdisclaimertext{
+color:black;
+margin:10px;
+text-align: left;
+}
+
+.errordisclaimer{
+position:relative;
+margin-top:5px;
+margin-bottom:300px;
+width:948px;
+background-color:#C9636A;
+border: solid 1px #dfe1e4;
+outline: solid 1px #333;
+}
+
+
+.next{
+width:197px;
+height:37px;
+position: relative;
+}
+.previous{
+width:197px;
+height:37px;
+position: relative;
+
+}
+.buttonwrap{
+	width:400px;
+	height:37px;
+	margin-top:280px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.submit{
+	position: absolute;
+	right:380px;
+	bottom:130px;
+}
+
+.footer{
+position: relative;
+background-image: url(img/frostybottom.png);
+background-repeat: repeat-x;
+width:100%;
+height:350px;   
+} 
+
+.footercontent{
+	position:relative;
+	width:950px;
+	height:350px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.footertext{
+	position:absolute;
+	left:20px;
+	top:320px;
+	font-family:"Verdana", sans-serif;
+	font-size:9pt;
+	color:#333;
+	font-weight: bold;
+	height:11pt;
+}
+.footertext a{
+	font-family:"Verdana", sans-serif;
+	font-size:9pt;
+	color:#333;
+	font-weight: bold;
+}
+.footertext a:hover{
+	font-family:"Verdana", sans-serif;
+	font-size:9pt;
+	color:#000;
+	font-weight: bold;
+}'
