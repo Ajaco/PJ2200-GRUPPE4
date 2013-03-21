@@ -16,7 +16,7 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
-            <li><a href="hello">\\ home<a></li>
+            <li><a href="/hello">\\ home<a></li>
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
@@ -93,11 +93,16 @@
 
                             <!-- PAGE 1 -->
                             <div class="page1 currentpage">
-                              <p class="pagetitle">Hello! Thank you for registrating. To start things off; What's your name?</p>
-                                <div class="boxcontent"> 
-                                  <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
-                                  <a class="next" href="#page2"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
-                                </div>
+                              <div class"mozwrap">
+                                <p class="pagetitle">Hello! Thank you for registrating. To start things off; What's your name?</p>
+                                  <div class="boxcontent"> 
+                                    <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
+                                    <div class="buttonwrap">
+                                      <a class="previous"><img src="img/previousno.png"/></a>
+                                      <a class="next" href="#page2"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                    </div>
+                                  </div>
+                              </div>
                             </div>
 
                             <!-- PAGE 2 -->
@@ -105,8 +110,10 @@
                               <p class="pagetitle">Next off.. we need to know when you are born. Format: yyyy.mm.dd</p>
                                 <div class="boxcontent">
                                   <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
-                                  <a class="previous" href="#page1"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
-                                  <a class="next" href="#page3"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>                                
+                                  <div class="buttonwrap">
+                                    <a class="previous" href="#page1"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                    <a class="next" href="#page3"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  </div>                                
                                 </div>
                             </div>
 
@@ -118,8 +125,10 @@
                                   <option value = "M">Male</option>
                                   <option value = "F">Female</option>
                                   </select>
-                                  <a class="previous" href="#page2"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
-                                  <a class="next" href="#page4"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  <div class="buttonwrap">
+                                    <a class="previous" href="#page2"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                    <a class="next" href="#page4"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  </div>
                                 </div>   
                             </div>
 
@@ -128,8 +137,10 @@
                               <p class="pagetitle">How can we reach you? Please enter your e-mail adress.</p>
                                 <div class="boxcontent">
                                   <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
-                                  <a class="previous" href="#page3"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
-                                  <a class="next" href="#page5"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  <div class="buttonwrap">
+                                    <a class="previous" href="#page3"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                    <a class="next" href="#page5"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  </div>
                                 </div>
                                 
                             </div>
@@ -139,8 +150,10 @@
                               <p class="pagetitle">We want to make certain we can reach you. Whats your phone number?</p>
                                 <div class="boxcontent">
                                   <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
-                                  <a class="previous" href="#page4"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
-                                  <a class="next" href="#page6"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  <div class="buttonwrap">
+                                    <a class="previous" href="#page4"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                    <a class="next" href="#page6"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
+                                  </div>
                                 </div>
                                 
                             </div>
@@ -155,7 +168,10 @@
                                   <option value = "Graphic Designer">Graphic Design</option>
                                   <option value = "Audio">Audio</option>
                                   </select>
-                                  <a class="previous" href="#page5"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                  <div class="buttonwrap">
+                                    <a class="previous" href="#page5"><img src="img/previous.png" onmouseover="this.src='img/previoushover.png'" onmouseout="this.src='img/previous.png'" /></a>
+                                    <a class="next"><img src="img/nextno.png"></a>
+                                  </div>
                                   <button type="submit" class="submit"><img src="img/submit.png"/></button>
                                 </div>
                             </div>
@@ -179,9 +195,13 @@
     </ul>
 
   </div>
-
-
-<div class="footer"></div>
+  <div class="footer">
+    <div class="footercontent">
+      <p class="footertext">
+        All rights reserved (C) Dare to be Digital | Phone: +47 00 11 22 33 | Email: <a href="mailto:${User.email}" target="_" value="daretobenith@gmail.com"/>daretobenith@gmail.com</a> | Visit adress: Schweigaardsgate 14
+      </p>
+    </div>
+  </div>
 </div><!-- Container-->
 </body>
 </html>

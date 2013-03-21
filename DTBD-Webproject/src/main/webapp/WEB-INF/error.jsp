@@ -35,7 +35,13 @@
       </p>
     </div>
   </div> <!-- Content -->
-<div class="footer"></div>
+  <div class="footer">
+    <div class="footercontent">
+      <p class="footertext">
+        All rights reserved (C) Dare to be Digital | Phone: +47 00 11 22 33 | Email: <a href="mailto:${User.email}" target="_" value="daretobenith@gmail.com"/>daretobenith@gmail.com</a> | Visit adress: Schweigaardsgate 14
+      </p>
+    </div>
+  </div>
 </div><!-- Container-->
 </body>
 </html>
