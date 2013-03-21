@@ -103,6 +103,36 @@
   	<url-pattern>/search</url-pattern>
   	</servlet-mapping>
   	
+  	<servlet>
+  	<servlet-name>edituserservlet</servlet-name>
+  	<servlet-class>no.nith.EditUserServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>edituserservlet</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  	<servlet-name>successservlet</servlet-name>
+  	<servlet-class>no.nith.SuccessServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>successservlet</servlet-name>
+  	<url-pattern>/success</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	<servlet>
+  	<servlet-name>errorservlet</servlet-name>
+  	<servlet-class>no.nith.ErrorServlet</servlet-class>
+  	</servlet>
+  
+  	<servlet-mapping>
+  	<servlet-name>errorservlet</servlet-name>
+  	<url-pattern>/ouch</url-pattern>
+  	</servlet-mapping>
   	
   	
   	

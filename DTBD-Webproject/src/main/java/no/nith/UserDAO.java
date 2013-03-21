@@ -14,8 +14,7 @@ public class UserDAO {
 
 		List<User> users = new ArrayList<User>();	
 		return users;
-	}
-	
+	}	
 	
 	public List<User> getUser(String culomn, String value) throws SQLException{
 
@@ -154,4 +153,25 @@ public class UserDAO {
 			
 			statement.executeUpdate();
 	}
+	
+	public void editUser(String groupName, String email) throws SQLException {
+		try{
+		String url = "jdbc:mysql://localhost/mingle";
+		String username = "root";	 
+		String password = "1234"; 
+		
+			Connection connection =
+					DriverManager.getConnection(url, username, password);
+			
+			String sql = "UPDATE users SET groupName=? WHERE email=?;";
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(1, groupName);
+			statement.setString(2, email);
+			statement.executeUpdate();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void editUser() throws SQLException {}
 }

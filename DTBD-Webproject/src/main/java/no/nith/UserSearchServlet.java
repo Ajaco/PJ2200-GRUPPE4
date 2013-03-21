@@ -19,11 +19,7 @@ public class UserSearchServlet extends HttpServlet {
 		
 		List<User> user;
 		try{
-			/*if (query != null && query.length() > 0) {
-				user = new UserDAO().getUser(query);
-			} else {
-				user = new UserDAO().getUser(); // just fetch everything
-			}*/
+
 			if(value != null && value.length() > 0){
 				user = new UserDAO().getUser(culomn, value);
 			}else{

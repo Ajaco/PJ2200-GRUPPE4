@@ -67,7 +67,7 @@
 					<li class="liphoneres"><c:out value="${User.phoneNumber}" /></li>
 					<li class="lioccures"><c:out value="${User.occupation}" /></li>
 					<li class="ligrpnameres"><c:out value="${User.groupName}" /></li>
-					<li class="liedituserres"><a href="/edituser">Edit this user</a></li>
+					<li class="liedituserres"><a href="/edit">Edit this user</a></li>
 				</ul>
 			</c:forEach>
 			</tbody>
