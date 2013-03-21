@@ -28,6 +28,7 @@
 
 
   <div class="content">
+    <div class="contestbanner"></div>
     <div class="contestheader"></div>
     <div class="about">
       <p class="abouttext">
@@ -39,20 +40,15 @@
       </p>
     </div>
 
-    <div class="rulesheader"></div>
-    <div class="about">
-      <p class="abouttext">
-        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.<br/><br/>
-      </p>
-    </div>
+
 
     <div class="when"></div>
     <div class="about">
       <p class="abouttext">
-        Dare to be Digital is a video games development competition for extremely talented students at Universities and Colleges of Art. Teams of 5 students, usually a mix of artists, programmers and audio, assemble at Abertay University for 9 weeks during June to August to develop a prototype video game, receiving mentoring from industry. The students also receive a weekly stipend of 150 pounds per student, free accommodation at the University's halls of residence and a team budget of 200 pounds.<br/><br/>
+      Dare 2013 will take place 10th June - 11th August 2013. 
       </p>
     </div>
-        <a href="http://www.daretobedigital.com/78_FAQs.html" target="_blank"><div class="readmore"></div></a>
+        <a href="http://www.daretobedigital.com/78_FAQs.html" target="_blank"><div class="readmorecontest"></div></a>
     
 
   </div> <!-- Content -->

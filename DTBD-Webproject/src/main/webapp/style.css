@@ -274,16 +274,19 @@ margin-top:20px;
 margin-bottom:0px;
 width:100%;
 height:auto;
-background-color:#333;
+background-color:#b7d8f6;
 border: solid 1px #dfe1e4;
 outline: solid 1px #333;
 font-family:"Verdana", sans-serif;
-color:white;
+color:#333;
 font-size: 10pt;
 height:75px;
 }
+.contact a{
+	color:#333;
+}
 .contacttext{
-color:white;
+color:#333;
 margin:10px;
 text-align: left;
 
@@ -298,7 +301,7 @@ text-align: left;
 	margin-left:10px;
 }
 .contactperson{
-	color:#333;
+	color:#b7d8f6;
 	font-family:"Verdana", sans-serif;
 	font-weight: bold;
 	font-size:9pt;
@@ -314,7 +317,7 @@ height:33px;
 width:521px;
 }
 .aboutnordic{
-margin-top:20px;
+margin-top:80px;
 position:relative;
 background-image: url(img/aboutnordic.png);
 background-repeat:no-repeat;
@@ -322,7 +325,7 @@ height:33px;
 width:521px;
 }
 .history{
-margin-top:20px;
+margin-top:80px;
 position:relative;
 background-image: url(img/history.png);
 background-repeat:no-repeat;
@@ -336,6 +339,15 @@ background-image: url(img/contestheader.png);
 background-repeat:no-repeat;
 height:33px;
 width:521px;
+}
+
+.contestbanner{
+margin-top:20px;
+position:relative;
+background-image: url(img/contestbanner.png);
+background-repeat:no-repeat;
+height:150px;
+width:950px;
 }
 .rulesheader{
 margin-top:40px;
@@ -362,6 +374,27 @@ height:33px;
 width:521px;
 }
 
+.bar1{
+background-image:url(img/bar1.png);
+margin-top:5px;
+width:950px;
+height:50px;
+}
+
+.bar2{
+width:950px;
+height:50px;
+margin-top:5px;
+background-image:url(img/bar2.png);
+}
+
+.bar3{
+width:950px;
+height:50px;
+margin-top:5px;
+background-image:url(img/bar3.png);
+}
+
 /*TOP SECTION*/
 .aboutingress{
 position:relative;
@@ -383,7 +416,8 @@ text-align: left;
 position:relative;
 margin-top:5px;
 margin-bottom:0px;
-width:100%;
+width:946px;
+margin-left:1px;
 height:auto;
 background-color:#b7d8f6;
 border: solid 1px #dfe1e4;
@@ -400,7 +434,14 @@ text-align: left;
 width:407px;
 height:33px;
 background-image: url(img/readmore.png);
-margin-top:30px;
+margin:30px;
+}
+
+.readmorecontest{
+	width:407px;
+	height:33px;
+	background-image: url(img/readmore.png);
+	margin-top:30px;
 }
 
 /* FIND A GROUP */

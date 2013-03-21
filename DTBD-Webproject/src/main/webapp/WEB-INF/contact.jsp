@@ -33,7 +33,7 @@
       <p class="contacttext">
         <div class="contactframe"><p class="contactperson">DTBD</p></div>
         Contact Person: Name Namerson <br/>
-        Email: <a href="name@namerson.com" target="_blank"> </a><br/>
+        Email: <a href="name@namerson.com" target="_blank">name@namerson.com</a><br/>
         Phone: +47 11 22 33 44 <br/>
         Visiting-adress: Ola Nordmannsgate 3, 0000 OSLO
     </div>
