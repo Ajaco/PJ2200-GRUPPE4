@@ -20,7 +20,6 @@
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
-            <li><a href="/news">\\ news</a></li>
             <li><a href="/contact">\\ contact</a></li>
             <li><a href="/about">\\ about</a></li>
         </ul>
@@ -97,7 +96,7 @@
                               <p class="pagetitle">Hello! Thank you for registrating. To start things off; What's your name?</p>
                                 <div class="boxcontent"> 
                                   <input type="text" name="fullName" class="input-medium" value="<c:out value="${param.fullName}" />">
-                                  <a class="next" href="#page2">Next</a>
+                                  <a class="next" href="#page2"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
                                 </div>
                             </div>
 
@@ -106,7 +105,7 @@
                               <p class="pagetitle">Next off.. we need to know when you are born. Format: yyyy.mm.dd</p>
                                 <div class="boxcontent">
                                   <input type="text" name="dateOfBirth" class="input-medium" value="<c:out value="${param.dateOfBirth}" />">
-                                  <a class="next" href="#page3">Next</a>                                
+                                  <a class="next" href="#page3"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>                                
                                 </div>
                             </div>
 
@@ -118,7 +117,7 @@
                                   <option value = "M">Male</option>
                                   <option value = "F">Female</option>
                                   </select>
-                                  <a class="next" href="#page4">Next</a>
+                                  <a class="next" href="#page4"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
                                 </div>   
                             </div>
 
@@ -127,7 +126,7 @@
                               <p class="pagetitle">How can we reach you? Please enter your e-mail adress.</p>
                                 <div class="boxcontent">
                                   <input type="text" name="email" class="input-medium" value="<c:out value="${param.email}" />">
-                                  <a class="next" href="#page5">Next</a>
+                                  <a class="next" href="#page5"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
                                 </div>
                                 
                             </div>
@@ -137,7 +136,7 @@
                               <p class="pagetitle">We want to make certain we can reach you. Whats your phone number?</p>
                                 <div class="boxcontent">
                                   <input type="text" name="phoneNumber" class="input-medium" value="<c:out value="${param.phoneNumber}" />">
-                                  <a class="next" href="#page6">Next</a>
+                                  <a class="next" href="#page6"><img src="img/next.png" onmouseover="this.src='img/nexthover.png'" onmouseout="this.src='img/next.png'" /></a>
                                 </div>
                                 
                             </div>

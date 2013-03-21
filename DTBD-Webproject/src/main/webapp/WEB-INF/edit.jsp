@@ -20,7 +20,6 @@
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
-            <li><a href="/news">\\ news</a></li>
             <li><a href="/contact">\\ contact</a></li>
             <li><a href="/about">\\ about</a></li>
         </ul>

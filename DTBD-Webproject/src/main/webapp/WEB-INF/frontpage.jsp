@@ -19,7 +19,6 @@
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
-            <li><a href="/news">\\ news</a></li>
             <li><a href="/contact">\\ contact</a></li>
             <li><a href="/about">\\ about</a></li>
         </ul>
@@ -44,7 +43,7 @@
     <!-- APPLY MENU -->
     <div class="applyheader"></div>
     <div class="apply">
-      <a href="/insert"><img src="img/applywithagroup.png" alt="Apply with a group!" class="applygroup"/></a>
+      <a href="/mingle"><img src="img/applywithagroup.png" alt="Apply with a group!" class="applygroup"/></a>
       <a href="/search"><img src="img/findagroup.png" alt="Find a group!" class="applysolo"/></a>
     </div>
 

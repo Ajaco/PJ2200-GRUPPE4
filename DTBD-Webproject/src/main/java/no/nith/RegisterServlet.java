@@ -34,7 +34,7 @@ public class RegisterServlet extends HttpServlet {
 				SendMail.send(subject, message, "ajaco92@gmail.com");
 				resp.sendRedirect("/success");
 			}else{
-				resp.sendRedirect("/regerror");
+				resp.sendRedirect("/ouch");
 			}			
 		}catch(Exception e){
 			System.out.println(e.getMessage());
