@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Dare to be Digital - About us!</title>
+  <title>DTBD - About us!</title>
   <meta charset="ISO-8859-1" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -18,7 +18,7 @@
         <ul class="menu">
             <li><a href="hello">\\ home</a></li>
             <li><a href="/mingle">\\ find co-workers</a></li>
-            <li><a href="/apply">\\ register</a></li>
+            <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
             <li><a href="/contact">\\ contact</a></li>
             <li><a href="/about">\\ about</a></li>
@@ -70,6 +70,11 @@
   </div> <!-- Content -->
   <div class="footer">
     <div class="footercontent">
+      <div class="iconwrap">
+        <a href="https://twitter.com/daretobedigital" target="_"><div class="tweeticon"></div></a>
+        <a href="http://www.facebook.com/daretobedigital" target="_"><div class="faceicon"></div></a>
+        <a href="http://www.daretobedigital.com" target="_"><div class="dareicon"></div></a>
+      </div>
       <p class="footertext">
         All rights reserved (C) Dare to be Digital | Phone: +47 00 11 22 33 | Email: <a href="mailto:daretobednith@gmail.com" target="_blank">daretobenith@gmail.com</a> | Visit adress: Schweigaardsgate 14
       </p>

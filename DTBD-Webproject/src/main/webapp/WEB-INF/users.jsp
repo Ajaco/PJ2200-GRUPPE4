@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-  <title>Dare to be Digital - Index</title>
+  <title>DTBD - Search!</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -16,11 +16,10 @@
       <div class="logomenuwrap">
         <a href="/hello"><div class="logo"></div></a>
         <ul class="menu">
-            <li><a href="hello">\\ home<a></li>
+            <li><a href="hello">\\ home</a></li>
             <li><a href="/mingle">\\ find co-workers</a></li>
             <li><a href="/apply">\\ apply</a></li>
             <li><a href="/contest">\\ the contest</a></li>
-            <li><a href="/news">\\ news</a></li>
             <li><a href="/contact">\\ contact</a></li>
             <li><a href="/about">\\ about</a></li>
         </ul>
@@ -77,8 +76,13 @@
   </div> <!-- Content -->
   <div class="footer">
     <div class="footercontent">
+      <div class="iconwrap">
+        <a href="https://twitter.com/daretobedigital" target="_"><div class="tweeticon"></div></a>
+        <a href="http://www.facebook.com/daretobedigital" target="_"><div class="faceicon"></div></a>
+        <a href="http://www.daretobedigital.com" target="_"><div class="dareicon"></div></a>
+      </div>
       <p class="footertext">
-        All rights reserved (C) Dare to be Digital | Phone: +47 00 11 22 33 | Email: <a href="mailto:${User.email}" target="_" value="daretobenith@gmail.com"/>daretobenith@gmail.com</a> | Visit adress: Schweigaardsgate 14
+        All rights reserved (C) Dare to be Digital | Phone: +47 00 11 22 33 | Email: <a href="mailto:daretobednith@gmail.com" target="_blank">daretobenith@gmail.com</a> | Visit adress: Schweigaardsgate 14
       </p>
     </div>
   </div>

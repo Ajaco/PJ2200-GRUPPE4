@@ -9,13 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class NewsServlet extends HttpServlet {
+public class SuccessDatabaseServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException, ServletException {
 		
-		// Serverer JSP-siden responsen vi har klargjort
-		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/news.jsp");
+		RequestDispatcher view = req.getRequestDispatcher("/WEB-INF/successdb.jsp");
 		view.forward(req, resp);
 	}
 }

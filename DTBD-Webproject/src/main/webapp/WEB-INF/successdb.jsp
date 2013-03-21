@@ -1,8 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!doctype html>
 <html>
 <head>
-  <title>DTBD - Edit!</title>
-  <meta charset="utf-8" />
+  <title>DTBD - Success</title>
+  <meta charset="ISO-8859-1" />
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -28,26 +28,14 @@
 
 
   <div class="content">
-    <div class="disclaimer">
-      <p class="disclaimertext">
-        NOTE:</br> THIS PAGE IS USED FOR ADDING A PERSON TO A GROUP OR REMOVING SOMEONE FROM A GROUP</br> IF YOU WANT TO LEAVE YOUR CURRENT GROUP, LEAVE THE "GROUP" FIELD BLANK</br>IF YOU WANT TO JOIN ANOTHER GROUP, FILL IN THAT GROUP'S NAME IN THE FIELD.
+  <div class="successdisclaimer">
+      <p class="successdisclaimertext">
+        YAY!<br/><br/>
+        YOU, OR YOUR GROUP, HAVE BEEN REGISTERED IN THE SYSTEM. <br/><br/>
+        IF YOU'RE ALONE, OR LOOKING FOR MORE MEMBERS FOR YOUR GROUP, PLEASE CLICK <a href="/search">HERE</a>.<br/><br/> 
+        IF YOU REGISTERED A FULL GROUP OF FOUR PEOPLE, YOU CAN APPLY FOR THE TOURNAMENT, BY CLICKING <a href="/search">HERE</a>. 
       </p>
     </div>
-    <div class="changegroupheader"></div>
-    <div class="news">
-      <form action="/edit">
-        <div class="formwrapper">
-          <ul class="editgrouptitles">
-            <li class="editmail">Your email adress</li>
-            <li class="editgroup">New group name</li>
-          </ul>
-              <input type="text" name="email" class="edit-input" value="<c:out value="${param.email}" />">
-              <input type="text" name="groupName" class="edit-input" value="<c:out value="${param.groupName}" />">
-          <button type="submit" class="editsubmit"><img src="img/register.png"></button>
-        </div>
-      </div>
-    </form>
-
   </div> <!-- Content -->
   <div class="footer">
     <div class="footercontent">

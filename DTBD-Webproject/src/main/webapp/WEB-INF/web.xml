@@ -20,7 +20,15 @@
   	<url-pattern>/hello</url-pattern>
   	</servlet-mapping>
   	
+  	<servlet>
+  	<servlet-name>successdatabaseservlet</servlet-name>
+  	<servlet-class>no.nith.SuccessDatabaseServlet</servlet-class>
+  	</servlet>
   	
+  	<servlet-mapping>
+  	<servlet-name>successdatabaseservlet</servlet-name>
+  	<url-pattern>/successdb</url-pattern>
+  	</servlet-mapping>
   	
   	
   	
@@ -42,19 +50,7 @@
   	
   	
   	
-  	
-  	
-  	
-  	
-  	<servlet>
-  	<servlet-name>newsservlet</servlet-name>
-  	<servlet-class>no.nith.NewsServlet</servlet-class>
-  	</servlet>
-  	
-  	<servlet-mapping>
-  	<servlet-name>newsservlet</servlet-name>
-  	<url-pattern>/news</url-pattern>
-  	</servlet-mapping>
+ 
   	
   	
   	

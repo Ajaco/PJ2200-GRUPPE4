@@ -27,7 +27,7 @@ public class InsertUserServlet extends HttpServlet {
 				if(fullName[i] != null && !fullName[i].isEmpty() )
 					new UserDAO().insertUser(fullName[i], dateOfBirth[i], sex[i], email[i], phoneNumber[i], occupation[i], groupName);	
 			}
-			resp.sendRedirect("/success");
+			resp.sendRedirect("/successdb");
 		}catch(SQLException e){
 			System.out.println(e.getMessage());
 			resp.sendRedirect("/ouch");
